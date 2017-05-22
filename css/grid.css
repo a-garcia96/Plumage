@@ -38,3 +38,55 @@
 .col-1:last-child{
   margin-right: 0;
 }
+
+
+.col-2{
+  background-color: #677dcc;
+  min-height: 40px;
+  border-radius: 5px;
+  margin: 0 2.4%;
+  float: left;
+  width: 12.66%;
+}
+
+.col-2:first-child{
+  margin-left: 0;
+}
+
+.col-2:last-child{
+  margin-right: 0;
+}
+
+.col-3{
+  background-color: #677dcc;
+  min-height: 40px;
+  border-radius: 5px;
+  margin: 0 2.4%;
+  float: left;
+  width: 21.4%;
+}
+
+.col-3:first-child{
+  margin-left: 0;
+}
+
+.col-3:last-child{
+  margin-right: 0;
+}
+
+.col-4{
+  background-color: #677dcc;
+  min-height: 40px;
+  border-radius: 5px;
+  margin: 0 2.4%;
+  float: left;
+  width: 30.133%;
+}
+
+.col-4:first-child{
+  margin-left: 0;
+}
+
+.col-4:last-child{
+  margin-right: 0;
+}
