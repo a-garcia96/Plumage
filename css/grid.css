@@ -2,12 +2,14 @@
 * Plumage V 1.0
 * 05/18/2017
 * Author: Alex Garcia
+* GRID SYSTEM
 */
 
 *{
   box-sizing: border-box;
 }
 
+/*Main content container based on 960px but deciding to make it 1200px?*/
 .container{
   width: 100%;
   max-width: 960px;
@@ -15,12 +17,16 @@
   margin: 0 auto;
 }
 
+
+/*Creates row for columns to be centered within and not overflow*/
 .row{
   padding: 20px;
   width: 100%;
   min-height: 1px;
   float: left;
 }
+
+/*Columns*/
 
 .col-1{
   background-color: #677dcc;
@@ -88,5 +94,22 @@
 }
 
 .col-4:last-child{
+  margin-right: 0;
+}
+
+.col-5{
+  background-color: #677dcc;
+  min-height: 40px;
+  border-radius: 5px;
+  margin: 0 2.4%;
+  float: left;
+  width: 45.2%;
+}
+
+.col-5:first-child{
+  margin-left: 0;
+}
+
+.col-5:last-child{
   margin-right: 0;
 }
