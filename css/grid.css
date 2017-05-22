@@ -9,6 +9,11 @@
   box-sizing: border-box;
 }
 
+h1{
+  text-align: center;
+  color: #333333;
+}
+
 /*Main content container based on 960px but deciding to make it 1200px?*/
 .container{
   width: 100%;
@@ -103,7 +108,7 @@
   border-radius: 5px;
   margin: 0 2.4%;
   float: left;
-  width: 45.2%;
+  width: 38.867%;
 }
 
 .col-5:first-child{
@@ -111,5 +116,124 @@
 }
 
 .col-5:last-child{
+  margin-right: 0;
+}
+
+.col-6{
+  background-color: #677dcc;
+  min-height: 40px;
+  border-radius: 5px;
+  margin: 0 2.4%;
+  float: left;
+  width: 47.6%;
+}
+
+.col-6:first-child{
+  margin-left: 0;
+}
+
+.col-6:last-child{
+  margin-right: 0;
+}
+
+.col-7{
+  background-color: #677dcc;
+  min-height: 40px;
+  border-radius: 5px;
+  margin: 0 2.4%;
+  float: left;
+  width: 56.333%;
+}
+
+.col-7:first-child{
+  margin-left: 0;
+}
+
+.col-7:last-child{
+  margin-right: 0;
+}
+
+.col-8{
+  background-color: #677dcc;
+  min-height: 40px;
+  border-radius: 5px;
+  margin: 0 2.4%;
+  float: left;
+  width: 65%;
+}
+
+.col-8:first-child{
+  margin-left: 0;
+}
+
+.col-8:last-child{
+  margin-right: 0;
+}
+
+.col-9{
+  background-color: #677dcc;
+  min-height: 40px;
+  border-radius: 5px;
+  margin: 0 2.4%;
+  float: left;
+  width: 73.8%;
+}
+
+.col-9:first-child{
+  margin-left: 0;
+}
+
+.col-9:last-child{
+  margin-right: 0;
+}
+
+.col-10{
+  background-color: #677dcc;
+  min-height: 40px;
+  border-radius: 5px;
+  margin: 0 2.4%;
+  float: left;
+  width: 82.533%;
+}
+
+.col-10:first-child{
+  margin-left: 0;
+}
+
+.col-10:last-child{
+  margin-right: 0;
+}
+
+.col-11{
+  background-color: #677dcc;
+  min-height: 40px;
+  border-radius: 5px;
+  margin: 0 2.4%;
+  float: left;
+  width: 91.27%;
+}
+
+.col-11:first-child{
+  margin-left: 0;
+}
+
+.col-11:last-child{
+  margin-right: 0;
+}
+
+.col-12{
+  background-color: #677dcc;
+  min-height: 40px;
+  border-radius: 5px;
+  margin: 0 2.4%;
+  float: left;
+  width: 100%;
+}
+
+.col-12:first-child{
+  margin-left: 0;
+}
+
+.col-12:last-child{
   margin-right: 0;
 }
