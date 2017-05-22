@@ -1,4 +1,40 @@
 /*
 * Plumage V 1.0
 * 05/18/2017
+* Author: Alex Garcia
 */
+
+*{
+  box-sizing: border-box;
+}
+
+.container{
+  width: 100%;
+  max-width: 960px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.row{
+  padding: 20px;
+  width: 100%;
+  min-height: 1px;
+  float: left;
+}
+
+.col-1{
+  background-color: #677dcc;
+  min-height: 40px;
+  border-radius: 5px;
+  margin: 0 2.4%;
+  float: left;
+  width: 3.93%;
+}
+
+.col-1:first-child{
+  margin-left: 0;
+}
+
+.col-1:last-child{
+  margin-right: 0;
+}
