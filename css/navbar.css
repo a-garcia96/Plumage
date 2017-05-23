@@ -1,0 +1,26 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+.navbar{
+  background-color: #B2EBF2;
+  padding: 20px;
+}
+
+.navbar ul{
+  list-style: none;
+  display: none;
+}
+
+.navbar-brand{
+  margin: 0;
+}
+
+.navbar-logo{
+  float: left;
+  width: 15%;
+}
