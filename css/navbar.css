@@ -12,7 +12,8 @@ body{
   background-color: #ffffff;
   padding: 10px;
   height: 80px;
-  display: fixed
+  position: fixed;
+  width: 100%;
 }
 
 .navbar ul{
@@ -33,4 +34,13 @@ body{
 .navbar-logo{
   float: left;
   width: 15%;
+}
+
+.navbar-icon{
+  height: 10px;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  display: inline-block;
+  background-color: black;
 }
