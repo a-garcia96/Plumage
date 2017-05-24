@@ -51,7 +51,7 @@ body{
   width: 15%;
 }
 
-.navbar-icon{
+.navbar-menu-icon{
   height: 2px;
   background-color: black;
   width: 25px;
@@ -60,7 +60,7 @@ body{
   right: 40px;
 }
 
-.navbar-icon:before{
+.navbar-menu-icon:before{
   content: "";
   height: 2px;
   background-color: black;
@@ -70,7 +70,7 @@ body{
   top: -6px;
 }
 
-.navbar-icon:after{
+.navbar-menu-icon:after{
   content: "";
   height: 2px;
   background-color: black;
