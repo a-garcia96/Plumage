@@ -1,0 +1,79 @@
+/*
+* Plumage V 1.0
+* 5/23/2017
+* Author: Tracey Olson
+* Table CSS
+*/
+
+/* ------------------------Tables------------------------- */
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width:100%;
+    }
+    table thead {
+        display: none;
+    }
+    table tr {
+        margin-bottom: 10px;
+        display: block;
+        border-bottom: 2px solid #ddd;
+    }
+    table th {
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    table th, table td {
+        padding: 10px;
+        text-align: center;
+    }
+    table td {
+        display: block;
+        text-align: right;
+        font-size: 13px;
+        border-bottom: 1px dotted #ccc;
+    }
+    table td:last-child {
+        border-bottom: 0;
+    }
+    table td:before {
+        content: attr(data-label);
+        float: left;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .zebra caption, .zebra tr:nth-of-type(even) { /* zebra striping */
+        background-color:#eee;
+    }
+
+  @media screen and (min-width: 550px) {
+    table {
+        border: 1px solid #ccc.zebra ;
+    }
+    table tr {
+        border: 1px solid #ddd;
+        padding: 5px;
+        display:table-row;
+    }
+    table thead {
+        display: table-header-group;
+        background-color:#ddd;
+    }
+    table td {
+        display: table-cell;
+        text-align: center;
+        border-right: 1px solid #ddd;
+    }
+    table td:before {
+        content:"";
+        float:none;
+        text-transform:none;
+        font-weight: normal;
+    }
+    .zebra caption { /* zebra striping */
+        background-color:inherit;
+    }
+}
+/* END Table code */
