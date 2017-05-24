@@ -1,4 +1,4 @@
-/*  Zero Out Your Margins And Padding  */ 
+/*  Zero Out Your Margins And Padding  */
 
 body, html, div, blockquote, img, label,figure, p, h1, h2, h3, h4, h5, h6, pre, ul,
 ol, li, dl, dt, dd, form, a, fieldset, input, th, td
@@ -35,7 +35,7 @@ main,
 li {
     display: block;
 }
- 
+
 sub, sup, h1, h2, h3, h4, h5, h6
 {
 font-size: inherit;
@@ -47,12 +47,12 @@ font: inherit;
 vertical-align: baseline;
 }
 
- 
+
 ul, ol
 {
 list-style: none;
 }
- 
+
 img
 {
 max-width: 100%;
@@ -76,7 +76,7 @@ a {
     text-decoration: none;
 }
 
-/*   border, font, letter-spacing and background rules reset the native appearance in all browsers. The -webkit-font-smoothing rule fixes buggy inheritance, pointer cursor om button for better ux */ 
+/*   border, font, letter-spacing and background rules reset the native appearance in all browsers. The -webkit-font-smoothing rule fixes buggy inheritance, pointer cursor om button for better ux */
 button {
     overflow: visible;
     border: 0;
@@ -93,7 +93,7 @@ button {
     border: 0;
 }
 
-/* FORM RESET */ 
+/* FORM RESET */
 
 input,
 label,
@@ -109,7 +109,7 @@ textarea
 	white-space:normal;
 	background:none;
 	line-height:1;
-	
+
 	/* Browsers have different default form fonts */
 	font-size:13px;
 	font-family:Arial;
@@ -165,8 +165,8 @@ input[type=time],
 input[type=url],
 input[type=week]
 {
-    
-    
+
+
 }
 
 /* Button Controls  ---------------------*/
@@ -207,7 +207,7 @@ input[type="submit"]
 
 /* IE8 and FF  within another selector */
 ::-webkit-file-upload-button
-{	
+{
 	padding:0;
 	border:0;
 	background:none;
@@ -215,11 +215,11 @@ input[type="submit"]
 
 /* Textarea -----------------------------------------------*/
 
-textarea 
+textarea
 {
 	/* Move the label to the top */
 	vertical-align:top;
-	
+
 	/* Turn off scroll bars in IE unless needed */
 	overflow:auto;
 }
@@ -231,32 +231,7 @@ select
 
 }
 
-select[multiple] 
+select[multiple]
 {
 	/* Move the label to the top */
 	vertical-align:top;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

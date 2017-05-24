@@ -1,11 +1,25 @@
+/*
+* Plumage V 1.0
+* 5/23/2017
+* Author: Alex Garcia
+* Navbar css
+*/
+
+
+/* ------------------------Temporary css------------------------- */
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
+/*Body margin needs to be set to 0 for there to be no white space between page and borders of web browser.
+*This is noticable on mobile view*/
+body{
+  margin: 0;
+}
+
+/* ------------------------NAVBAR------------------------- */
 
 *{
   box-sizing: border-box;
-}
-
-body{
-  margin: 0;
 }
 
 .navbar{

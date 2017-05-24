@@ -47,7 +47,7 @@
     .zebra caption, .zebra tr:nth-of-type(even) { /* zebra striping */
         background-color:#eee;
     }
-    
+
   @media screen and (min-width: 550px) {
     table {
         border: 1px solid #ccc.zebra ;
@@ -74,6 +74,6 @@
     }
     .zebra caption { /* zebra striping */
         background-color:inherit;
-    } 
+    }
 }
 /* END Table code */
