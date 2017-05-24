@@ -14,6 +14,7 @@
 *This is noticable on mobile view*/
 body{
   margin: 0;
+  background-color: #EEEEEE;
 }
 
 /* ------------------------NAVBAR------------------------- */
@@ -39,9 +40,9 @@ body{
 .mobile-nav{
   height: 100vh;
   background-color: #00BCD4;
-  width: 250px;
+  width: 16.563em;
   position: fixed;
-  right: -260px;
+  right: -17.188em;
   top: 0;
   box-shadow: -2px 0 8px -2px black;
   z-index: 10;
@@ -65,7 +66,7 @@ body{
 }
 
 .openNav{
-  transition: all .5s;
+  transition: right .3s;
   right: 0;
 }
 
