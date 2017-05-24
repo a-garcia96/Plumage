@@ -37,10 +37,30 @@ body{
 }
 
 .navbar-icon{
-  height: 10px;
-  position: absolute;
-  right: 20px;
-  top: 25px;
-  display: inline-block;
+  height: 2px;
   background-color: black;
+  width: 30px;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+
+.navbar-icon:before{
+  content: "";
+  height: 2px;
+  background-color: black;
+  width: 30px;
+  display: block;
+  position: absolute;
+  top: -8px;
+}
+
+.navbar-icon:after{
+  content: "";
+  height: 2px;
+  background-color: black;
+  width: 30px;
+  display: block;
+  position: absolute;
+  top: 8px;
 }
