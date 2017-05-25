@@ -36,7 +36,7 @@ h1{
 }
 
 
-/* ------------------------GRID SYSTEM------------------------- */
+/* ------------------------ MOBILE GRID SYSTEM------------------------- */
 /*Currently this grid system is for the desktop view. need to work on mobile view*/
 
 
@@ -48,37 +48,39 @@ h1{
   float: left;
 }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{
+[class^="col"]{
   float: left;
   background-color: #00BCD4;
   min-height: 40px;
   border-radius: 5px;
-  margin: 0 2.4%;
+  margin: 0;
+  width: 100%; /*WIDTH 100% WILL DEFAULT COLUMNS TO 100% WIDTH FOR MOBILE PHONES*/
 }
 
-.col-1{width: 3.93%;}
+/*UNLESS THESE COLUMN CLASSES ARE SPECIFIED COLUMNS AT MOBILE VIEW WILL BE 100%*/
+.col-sm-1{width: 3.93%;}
 
-.col-2{width: 12.66%;}
+.col-sm-2{width: 12.66%;}
 
-.col-3{width: 21.4%;}
+.col-sm-3{width: 21.4%;}
 
-.col-4{width: 30.133%;}
+.col-sm-4{width: 30.133%;}
 
-.col-5{width: 38.867%;}
+.col-sm-5{width: 38.867%;}
 
-.col-6{width: 47.6%;}
+.col-sm-6{width: 47.6%;}
 
-.col-7{width: 56.333%;}
+.col-sm-7{width: 56.333%;}
 
-.col-8{width: 65%;}
+.col-sm-8{width: 65%;}
 
-.col-9{width: 73.8%;}
+.col-sm-9{width: 73.8%;}
 
-.col-10{width: 82.533%;}
+.col-sm-10{width: 82.533%;}
 
-.col-11{width: 91.27%;}
+.col-sm-11{width: 91.27%;}
 
-.col-12{width: 100%;}
+.col-sm-12{width: 100%;}
 
 .row > [class^="col"]:first-child {
   margin-left: 0;
@@ -86,4 +88,99 @@ h1{
 
 .row > [class^="col"]:last-child{
   margin-right: 0;
+}
+
+
+/* ------------------------ TABLET GRID SYSTEM------------------------- */
+@media screen and (min-width: 600px) {
+  .col-md-1{width: 3.93%;}
+
+  .col-md-2{width: 12.66%;}
+
+  .col-md-3{width: 21.4%;}
+
+  .col-md-4{width: 30.133%;}
+
+  .col-md-5{width: 38.867%;}
+
+  .col-md-6{width: 47.6%;}
+
+  .col-md-7{width: 56.333%;}
+
+  .col-md-8{width: 65%;}
+
+  .col-md-9{width: 73.8%;}
+
+  .col-md-10{width: 82.533%;}
+
+  .col-md-11{width: 91.27%;}
+
+  .col-md-12{width: 100%;}
+}
+
+
+/* ------------------------ DESKTOP GRID SYSTEM------------------------- */
+@media screen and (min-width: 992px) {
+  .col-lg-1{width: 3.93%;}
+
+  .col-lg-2{width: 12.66%;}
+
+  .col-lg-3{width: 21.4%;}
+
+  .col-lg-4{width: 30.133%;}
+
+  .col-lg-5{width: 38.867%;}
+
+  .col-lg-6{width: 47.6%;}
+
+  .col-lg-7{width: 56.333%;}
+
+  .col-lg-8{width: 65%;}
+
+  .col-lg-9{width: 73.8%;}
+
+  .col-lg-10{width: 82.533%;}
+
+  .col-lg-11{width: 91.27%;}
+
+  .col-lg-12{width: 100%;}
+}
+
+/* ------------------------ DESKTOP GRID SYSTEM------------------------- */
+@media screen and (min-width: 1200px) {
+  /*SPECIFIES THAT ALL COLUMN SIZES EXCEPT SM(MOBILE) HAS A 0 2.4% MARGIN ON THEM*/
+  [class^="col-xl"], [class^="col-lg"], [class^="col-md"]{
+    margin: 0 2.4%;
+  }
+
+  .col-xl-1{width: 3.93%;}
+
+  .col-xl-2{width: 12.66%;}
+
+  .col-xl-3{width: 21.4%;}
+
+  .col-xl-4{width: 30.133%;}
+
+  .col-xl-5{width: 38.867%;}
+
+  .col-xl-6{width: 47.6%;}
+
+  .col-xl-7{width: 56.333%;}
+
+  .col-xl-8{width: 65%;}
+
+  .col-xl-9{width: 73.8%;}
+
+  .col-xl-10{width: 82.533%;}
+
+  .col-xl-11{width: 91.27%;}
+
+  .col-xl-12{width: 100%;}
+}
+
+
+.clear{
+  content: "";
+  clear: both;
+  display: table;
 }
