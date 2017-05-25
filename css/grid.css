@@ -1,27 +1,43 @@
 /*
-* Plumage V 1.0
+* Plumage V 1.2
+****CHANGES MADE*****
+*  - MINIFIED GRID SYSTEM CSS. WENT FROM 200 LINES OF CODE TO 90.
 * 05/18/2017
 * Author: Alex Garcia
 * GRID SYSTEM
 */
 
+/*TEMPORARY RULES*/
 *{
   box-sizing: border-box;
 }
 
-/*H1 RULE IS TEMPORARY */
 h1{
   text-align: center;
   color: #333333;
 }
+/*END TEMPORARY RULES*/
 
-/*Main content container based on 960px but deciding to make it 1200px?*/
+
+/*CONTENT CONTAINER BASED ON 960PX*/
 .container{
   width: 100%;
   max-width: 960px;
   min-width: 320px;
   margin: 0 auto;
 }
+
+/*LARGER SIZED CONTAINER TO GIVE USERS OPTION OF 960 STANDARD OR A LARGER 1280PX VIEW*/
+.container-lg{
+  width: 100%;
+  max-width: 1280px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+
+/* ------------------------GRID SYSTEM------------------------- */
+/*Currently this grid system is for the desktop view. need to work on mobile view*/
 
 
 /*Creates row for columns to be centered within and not overflow*/
@@ -32,209 +48,42 @@ h1{
   float: left;
 }
 
-/*Columns*/
-
-.col-1{
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{
+  float: left;
   background-color: #00BCD4;
   min-height: 40px;
   border-radius: 5px;
   margin: 0 2.4%;
-  float: left;
-  width: 3.93%;
 }
 
-.col-1:first-child{
+.col-1{width: 3.93%;}
+
+.col-2{width: 12.66%;}
+
+.col-3{width: 21.4%;}
+
+.col-4{width: 30.133%;}
+
+.col-5{width: 38.867%;}
+
+.col-6{width: 47.6%;}
+
+.col-7{width: 56.333%;}
+
+.col-8{width: 65%;}
+
+.col-9{width: 73.8%;}
+
+.col-10{width: 82.533%;}
+
+.col-11{width: 91.27%;}
+
+.col-12{width: 100%;}
+
+.row > [class^="col"]:first-child {
   margin-left: 0;
 }
 
-.col-1:last-child{
-  margin-right: 0;
-}
-
-
-.col-2{
-  background-color: #00BCD4;
-  min-height: 40px;
-  border-radius: 5px;
-  margin: 0 2.4%;
-  float: left;
-  width: 12.66%;
-}
-
-.col-2:first-child{
-  margin-left: 0;
-}
-
-.col-2:last-child{
-  margin-right: 0;
-}
-
-.col-3{
-  background-color: #00BCD4;
-  min-height: 40px;
-  border-radius: 5px;
-  margin: 0 2.4%;
-  float: left;
-  width: 21.4%;
-}
-
-.col-3:first-child{
-  margin-left: 0;
-}
-
-.col-3:last-child{
-  margin-right: 0;
-}
-
-.col-4{
-  background-color: #00BCD4;
-  min-height: 40px;
-  border-radius: 5px;
-  margin: 0 2.4%;
-  float: left;
-  width: 30.133%;
-}
-
-.col-4:first-child{
-  margin-left: 0;
-}
-
-.col-4:last-child{
-  margin-right: 0;
-}
-
-.col-5{
-  background-color: #00BCD4;
-  min-height: 40px;
-  border-radius: 5px;
-  margin: 0 2.4%;
-  float: left;
-  width: 38.867%;
-}
-
-.col-5:first-child{
-  margin-left: 0;
-}
-
-.col-5:last-child{
-  margin-right: 0;
-}
-
-.col-6{
-  background-color: #00BCD4;
-  min-height: 40px;
-  border-radius: 5px;
-  margin: 0 2.4%;
-  float: left;
-  width: 47.6%;
-}
-
-.col-6:first-child{
-  margin-left: 0;
-}
-
-.col-6:last-child{
-  margin-right: 0;
-}
-
-.col-7{
-  background-color: #00BCD4;
-  min-height: 40px;
-  border-radius: 5px;
-  margin: 0 2.4%;
-  float: left;
-  width: 56.333%;
-}
-
-.col-7:first-child{
-  margin-left: 0;
-}
-
-.col-7:last-child{
-  margin-right: 0;
-}
-
-.col-8{
-  background-color: #00BCD4;
-  min-height: 40px;
-  border-radius: 5px;
-  margin: 0 2.4%;
-  float: left;
-  width: 65%;
-}
-
-.col-8:first-child{
-  margin-left: 0;
-}
-
-.col-8:last-child{
-  margin-right: 0;
-}
-
-.col-9{
-  background-color: #00BCD4;
-  min-height: 40px;
-  border-radius: 5px;
-  margin: 0 2.4%;
-  float: left;
-  width: 73.8%;
-}
-
-.col-9:first-child{
-  margin-left: 0;
-}
-
-.col-9:last-child{
-  margin-right: 0;
-}
-
-.col-10{
-  background-color: #00BCD4;
-  min-height: 40px;
-  border-radius: 5px;
-  margin: 0 2.4%;
-  float: left;
-  width: 82.533%;
-}
-
-.col-10:first-child{
-  margin-left: 0;
-}
-
-.col-10:last-child{
-  margin-right: 0;
-}
-
-.col-11{
-  background-color: #00BCD4;
-  min-height: 40px;
-  border-radius: 5px;
-  margin: 0 2.4%;
-  float: left;
-  width: 91.27%;
-}
-
-.col-11:first-child{
-  margin-left: 0;
-}
-
-.col-11:last-child{
-  margin-right: 0;
-}
-
-.col-12{
-  background-color: #00BCD4;
-  min-height: 40px;
-  border-radius: 5px;
-  margin: 0 2.4%;
-  float: left;
-  width: 100%;
-}
-
-.col-12:first-child{
-  margin-left: 0;
-}
-
-.col-12:last-child{
+.row > [class^="col"]:last-child{
   margin-right: 0;
 }
