@@ -1,0 +1,179 @@
+.clearIt {
+    clear:both;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+footer {
+    background-color: rgba(104, 204, 204, 1);
+    min-height: 5em;
+    width: 100%;
+}
+
+/*
+* Plumage V 1.0
+* 05/23/2017
+* Author: Paulo Pamplona
+* FORMS
+*/
+
+
+
+
+legend {
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: 600; 
+}
+label {
+    display: block;
+    font-size: .92em;
+}
+
+fieldset {
+    margin: 2.5em 2em;
+    padding: 2em;
+    border: 1px solid #ccc;
+    border-width: 1px;
+    background-color: rgba(204, 204, 204, .05);
+    
+}
+legend {
+    background-color: rgba(204, 204, 204, .45);
+    line-height: 1.7;
+    padding: .5em;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    display: inline-block;
+    height: 40px;
+    padding: 5px 30px;
+    color: #333;
+    text-align: center;
+    font-size: 1em;
+    white-space: nowrap;
+    background-color: rgba(204, 204, 204, .45);
+    border-radius: 0px;
+    border: 1px solid #bbb;
+    cursor: pointer;    
+    box-sizing: border-box;
+    box-shadow: 3px 3px 5px #ccc;
+}
+
+.button, button {
+    background-color: rgba(204, 204, 204, .45);
+    line-height: 1.7;
+    padding: .5em;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+    
+
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+    color: #fff;
+    background-color: #ccc;
+    border-color: #888;
+    outline: 0; }
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+    width: 30%;
+    font-size: 1.2em;
+    color:#333;
+    margin-bottom:2em;
+    height: 4em;
+    padding: 6px 10px 0px 0px;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    box-shadow: none;
+}
+textarea {
+    height: 1em;
+    width: 50%;
+    padding: 1em 1em 1em 0em;
+    line-height: 1.4em;
+}
+select {
+    cursor: pointer;    
+}
+select, .option {
+    border-radius: 0px;
+    font-size: 1.2em;
+    color:#333;
+    margin-bottom:2em;
+    height: 4em;
+    padding: 6px 10px 6px 0px;
+    background: rgba(204, 204, 204, .07);;
+    border: 1px solid #ccc;
+    box-shadow: none;
+}
+select:focus {
+  border: 1px solid rgba(145,232,66,1);
+  outline: 0;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  border-bottom: 1px  solid rgba(145,232,66,1);
+  outline: 0;
+}
+
+
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline-block;
+}
+.switch {
+    
+}
+.range-field {
+    
+}
+
+
