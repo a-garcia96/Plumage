@@ -46,7 +46,7 @@ h1{
 
 /*Creates row for columns to be centered within and not overflow*/
 .row{
-  padding: 20px;
+  padding: 15px;
   width: 100%;
   min-height: 1px;
   float: left;
@@ -54,12 +54,14 @@ h1{
 
 [class^="col"]{
   float: left;
-  /*background-color: #ffffff; TOO BE REMOVED*/
   min-height: 40px;
-  /*border-radius: 5px; TOO BE REMOVED*/
+  border-radius: 5px;
   margin: 0;
   width: 100%; /*WIDTH 100% WILL DEFAULT COLUMNS TO 100% WIDTH FOR MOBILE PHONES*/
-  /*box-shadow: 4px 3px 6px -4px black; TOO BE REMOVED*/
+}
+
+[class^="col-xl"], [class^="col-lg"], [class^="col-md"]{
+  margin: 0 2.4%;
 }
 
 /*UNLESS THESE COLUMN CLASSES ARE SPECIFIED COLUMNS AT MOBILE VIEW WILL BE 100%*/
@@ -154,9 +156,6 @@ h1{
 /* ------------------------ DESKTOP GRID SYSTEM------------------------- */
 @media screen and (min-width: 1200px) {
   /*SPECIFIES THAT ALL COLUMN SIZES EXCEPT SM(MOBILE) HAS A 0 2.4% MARGIN ON THEM*/
-  [class^="col-xl"], [class^="col-lg"], [class^="col-md"]{
-    margin: 0 2.4%;
-  }
 
   .col-xl-1{width: 3.93%;}
 
