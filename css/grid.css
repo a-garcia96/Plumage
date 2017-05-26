@@ -54,12 +54,12 @@ h1{
 
 [class^="col"]{
   float: left;
-  background-color: #ffffff;
+  /*background-color: #ffffff; TOO BE REMOVED*/
   min-height: 40px;
-  border-radius: 5px;
+  /*border-radius: 5px; TOO BE REMOVED*/
   margin: 0;
   width: 100%; /*WIDTH 100% WILL DEFAULT COLUMNS TO 100% WIDTH FOR MOBILE PHONES*/
-  box-shadow: 4px 3px 6px -4px black;
+  /*box-shadow: 4px 3px 6px -4px black; TOO BE REMOVED*/
 }
 
 /*UNLESS THESE COLUMN CLASSES ARE SPECIFIED COLUMNS AT MOBILE VIEW WILL BE 100%*/
