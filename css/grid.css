@@ -1,5 +1,5 @@
 /*
-* Plumage V 1.2
+* Plumage V 2.0 BETA
 ****CHANGES MADE*****
 *  - MINIFIED GRID SYSTEM CSS. WENT FROM 200 LINES OF CODE TO 90.
 * 05/18/2017
@@ -60,10 +60,6 @@ h1{
   width: 100%; /*WIDTH 100% WILL DEFAULT COLUMNS TO 100% WIDTH FOR MOBILE PHONES*/
 }
 
-[class^="col-xl"], [class^="col-lg"], [class^="col-md"]{
-  margin: 0 2.4%;
-}
-
 /*UNLESS THESE COLUMN CLASSES ARE SPECIFIED COLUMNS AT MOBILE VIEW WILL BE 100%*/
 .col-sm-1{width: 3.93%;}
 
@@ -100,6 +96,11 @@ h1{
 
 /* ------------------------ TABLET GRID SYSTEM------------------------- */
 @media screen and (min-width: 600px) {
+
+  [class^="col-xl"], [class^="col-lg"], [class^="col-md"]{
+    margin: 0 2.4%;
+  }
+
   .col-md-1{width: 3.93%;}
 
   .col-md-2{width: 12.66%;}
@@ -180,11 +181,4 @@ h1{
   .col-xl-11{width: 91.27%;}
 
   .col-xl-12{width: 100%;}
-}
-
-
-.clear{
-  content: "";
-  clear: both;
-  display: table;
 }
