@@ -70,6 +70,11 @@ body{
   right: 0;
 }
 
+.closeNav{
+  transition: right .3s;
+  right: -17.188em;
+}
+
 /*END MOBILE NAV STYLING*/
 
 /*NAV BAR BRANDING STYLES*/
@@ -84,7 +89,7 @@ body{
 
 .navbar-logo{
   float: left;
-  width: 15%;
+  max-width: 15%;
 }
 
 /*END NAVBAR BRANDING STLYES*/
@@ -119,4 +124,67 @@ body{
   display: block;
   position: absolute;
   top: 6px;
+}
+
+/*HIDES DESKTOP NAV MENU FOR MOBILE AND TABLET DISPLAY*/
+.nav-menu{
+  display: none;
+}
+
+/* ------------------------ TABLET GRID SYSTEM------------------------- */
+@media screen and (min-width: 600px) {
+  .navbar-brand{
+    margin-top: 15px;
+  }
+}
+
+/* ------------------------ LAPTOP GRID SYSTEM------------------------- */
+@media screen and (min-width: 992px) {
+  .mobile-nav{
+    display: none;
+  }
+
+  .navbar-menu-icon{
+    display: none;
+  }
+
+  .nav-menu{
+    float: right;
+    margin-top: 5px;
+    display: block;
+  }
+
+  .nav-menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-menu li{
+    display: inline-block;
+  }
+
+  .nav-menu a{
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    color: #333;
+  }
+
+  .nav-menu a:visited{
+    color: #000;
+  }
+
+  .nav-menu a:hover{
+    color: #81C784;
+  }
+
+  .nav-menu a:active{
+    color:
+  }
+}
+
+/* ------------------------ DESKTOP GRID SYSTEM------------------------- */
+@media screen and (min-width: 1200px) {
+
 }
