@@ -126,6 +126,9 @@ body{
   top: 6px;
 }
 
+/*ANIMATION TO CHANGE MENU ICON TO AN X*/
+
+
 /*HIDES DESKTOP NAV MENU FOR MOBILE AND TABLET DISPLAY*/
 .nav-menu{
   display: none;
