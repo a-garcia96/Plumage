@@ -4,15 +4,13 @@
   position: relative;
   top: 80px;
   text-align: center;
-  background-image:url(../images/emile-perron-190221-compressor.jpg);
-  background-size: cover;
-  background-position: center right;
 }
 
 .billboard h1{
-  padding: 25% 5%;
+  padding: 15% 5%;
   color: #fff;
   font-size: 1.5em;
+  margin: 0;
 }
 
 

@@ -46,6 +46,7 @@ body{
   top: 0;
   box-shadow: -2px 0 8px -2px black;
   z-index: 10;
+  transition:.5s; /*NEEDS TRANSITION PROPERTY HERE FOR NAVIGATION TO SLIDE BACK IN INSTEAD OF SNAPPING CLOSED*/
 }
 
 .mobile-nav ul{
@@ -66,13 +67,8 @@ body{
 }
 
 .openNav{
-  transition: right .3s;
+  transition: 0.5s;
   right: 0;
-}
-
-.closeNav{
-  transition: right .3s;
-  right: -17.188em;
 }
 
 /*END MOBILE NAV STYLING*/
@@ -104,6 +100,7 @@ body{
   top: 35px;
   right: 40px;
   z-index: 15;
+  border-radius: 10px;
 }
 
 .navbar-menu-icon:before{
@@ -114,6 +111,7 @@ body{
   display: block;
   position: absolute;
   top: -6px;
+  border-radius: 10px
 }
 
 .navbar-menu-icon:after{
@@ -124,6 +122,7 @@ body{
   display: block;
   position: absolute;
   top: 6px;
+  border-radius: 10px
 }
 
 /*HIDES DESKTOP NAV MENU FOR MOBILE AND TABLET DISPLAY*/
