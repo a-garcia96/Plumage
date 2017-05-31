@@ -96,9 +96,9 @@ h1{
 
 /* ------------------------ TABLET GRID SYSTEM------------------------- */
 @media screen and (min-width: 600px) {
-
+.
   [class^="col-xl"], [class^="col-lg"], [class^="col-md"]{
-    margin: 0 2.4%;
+    margin: 0 1.9%;
   }
 
   .col-md-1{width: 3.93%;}
@@ -127,7 +127,7 @@ h1{
 }
 
 
-/* ------------------------ DESKTOP GRID SYSTEM------------------------- */
+/* ------------------------ LAPTOP GRID SYSTEM------------------------- */
 @media screen and (min-width: 992px) {
   .col-lg-1{width: 3.93%;}
 
