@@ -14,159 +14,307 @@
         
     body {
         font-family: 'Roboto', sans-serif; }
-
+        h1 {
+            font-size: 3rem;
+            padding: 1rem;
+            text-align: right; }
+        h2 {
+            font-size: 1.5rem;
+            padding: 0 1rem;
+            margin: 1rem 0; }
+        h3 {
+            padding: 0 1rem;
+            margin: .5rem 0 1.5rem 0; }
+        p {
+            line-height: 1.4rem;
+            margin: .5rem .5rem .5rem 1rem; }
+        ul {
+            margin-left: 2rem; }
+        li {
+            margin: .5rem 0; }
+        
+        code {
+            font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+            font-size: 1rem; }
+        
+        pre {
+            background-color: #ccc;
+            color: #999;
+            border: 1px solid #fff;
+            padding: 0 1rem;
+            margin:1rem;
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word; }
+        
+        .languageMarkup { }
+        
+        .plumage {
+            color: blue;
+        }
+        .plumageClass {
+            color: darkred;
+        }
+        .keyTag {
+            color: #000;
+        }
+        
     </style>
     
 </head>
-
 <body>
 <div class="container">
-<form action="" method="post">
+<div class="row">
+<div class="col-md-12">
+
+    <h1>Forms</h1>    
+    <p>Plumage.io framework provides a couple of covered tags for styling forms, such as: Form, Fieldset, Legend, Input Text, Input Number, Text Field, Range, Radio Buttons, Select Button, Checkbox, and Switch.</p>
+    
+    
+    
+<!-- Fieldset and Legend ------------------------>
    
+    <h2>Fieldset and Legend</h2>
+    <p>Fieldset are areas that work like &lt;sections&gt; that you have to use inside your form to separate and wrap different topics. The &lt;Legend&gt; is where you want to print the name of the fieldset. You should keep those tags always close to each other.</p>
+        
+    <pre><code>
+    &lt;<span class="keyTag">fieldset</span> title="Get in touch"&gt;
+    
+    &lt;<span class="keyTag">legend</span>&gt;</span>Legend Tag&lt;/<span class="keyTag">legend</span>&gt;
+    
+    <p>This is a empity&lt;b&gt;&lt;fieldset&gt;&lt;/b&gt;. The box-shadow doesn't belong to the style, but it's here to show you the area wrapped by this tag.</p>
+    
+    &lt;/<span class="keyTag">fieldset</span>&gt;
+    </code></pre>
+       
+    <h3>Displays:</h3>
+       
+    <fieldset style="box-shadow: 3px 3px 3px #ccc"  title="">
+    <legend>Legend Tag</legend>
+    <p>This is a empity <strong>&lt;fieldset&gt;</strong>. The box-shadow doesn't belong to the style, but it's here to show you the area wrapped by this tag.</p>
+    </fieldset>    
+
+    
+<!-- Input Text ------------------------>
+   
+    <h2>Input Text</h2>
+    <p>Input tag is a super common tag being used with different type attributes. Here is the list of <b>&lt;input&gt;</b> attributes covered on Plumage:</p>
+    <ul>
+        <li>input [ type = "email" ]</li>
+        <li>input [ type = "search" ]</li>
+        <li>input [ type = "text" ]</li>
+        <li>input [ type = "tel" ]</li>
+        <li>input [ type = "url" ]</li>
+        <li>input [ type = "password" ]</li>
+    </ul>
+    
+    <pre><code>    
+    &lt;<span class="keyTag">input</span> <span class="plumage">type="text"</span> title="Please enter your name" placeholder="Text Placeholder" autofocus required/&gt;
+    </code></pre>
+       
+    <h3>Displays:</h3>
+    <fieldset title="">
+    <input type="text" title="Please enter your name" placeholder="Text Placeholder" autofocus required/>
+    </fieldset>    
+
 <!-- Range ------------------------>
-    <fieldset>
-    <legend title="Input types">Legend fieldset</legend>
+   
+    <h2>Range</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, repellat exercitationem eos? Nisi omnis quaerat, facilis quos velit reprehenderit deserunt cupiditate placeat explicabo pariatur amet doloremque. Dignissimos ducimus accusantium saepe.</p>
+        
+    <pre><code>
+    &lt;<span class="keyTag">label</span> for="salary"&gt;Salary range&lt;/<span class="keyTag">label</span>&gt;
+    &lt;<span class="keyTag">input</span> <span class="plumage">type="range"</span> name="salary" min="12000" max="24000" step="1000" /&gt;    
+    </code></pre>
+    
+    <h3>Displays:</h3>
+    <fieldset title="">
     <label for="salary">Salary range</label>
     <input type="range" name="salary" min="12000" max="24000" step="1000" />
-    </fieldset>
-      
+    </fieldset> 
+
 <!-- Select ------------------------>
-    <fieldset>
-    <legend title="Select tag">Select</legend>
-      
-       <div class="input-field">
+   
+    <h2>Select</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur error veritatis eum dolorum, vitae iste ad autem, minus perspiciatis laboriosam incidunt nostrum deserunt facere numquam. Blanditiis voluptas, ea sint. Dolore.</p>
+        
+    <pre><code>
+        &lt;<span class="keyTag">select</span>&gt;
+            &lt;<span class="keyTag">option</span> value="EN"&gt;English&lt;/<span class="keyTag">option</span>&gt;
+            &lt;<span class="keyTag">option</span> value="PT" disabled&gt;Portuguese&lt;/<span class="keyTag">option</span>&gt;
+            &lt;<span class="keyTag">option</span> value="SP"&gt;Spanish&lt;/<span class="keyTag">option</span>&gt;
+            &lt;<span class="keyTag">option</span> value="RU"&gt;Russian&lt;/<span class="keyTag">option</span>&gt;
+        &lt;/<span class="keyTag">select</span>&gt;
+    </code></pre>
+    
+    
+    <h3>Displays:</h3>
+       
+    <fieldset title="">
         <select>
             <option value="EN">English</option>
             <option value="PT" disabled>Portuguese</option>
             <option value="SP">Spanish</option>
             <option value="RU">Russian</option>
         </select>
-        </div>
     </fieldset>
-    
-<!-- Input Text ------------------------>
-    <fieldset title="Get in touch">
-    <legend>Input Text</legend>
-    <ul>
-    <li>
-       <label for="name"></label>
-        <input type="text" title="Please enter your name" placeholder="First Name" autofocus required/>
-    </li>
-    <li>
-       <label for="name"></label>
-        <input type="text" title="Please enter your name" placeholder="Last Name" required/>
-    </li>
-    <li>
-        <label for="tel"></label>
-        <input type="tel" placeholder="Telephone" title="Telephone number" title="Phone number"/>
-    </li>       
-    <li>
-        <label for="email"></label>
-        <input type="email" title="Please enter your your email address" placeholder="your@email.com" required />
-    </li>
-    <li>
-        <label for="url"></label>
-        <input type="url" placeholder="www.yourwebsite.com" title="web address"/>
-    </li>
-    
-<!-- Input Number (to be stylized) ------------------------>
-    <li>
-        <label for="age">Age (to be stylized)</label><input type="number" name="age" />
-    </li>
-    </ul>    
-    </fieldset>
-    
-<!-- Radio Buttons ------------------------>
-    <fieldset title="Radio Buttons">
-    <legend>Radio Buttons</legend>
-    <p>
-      <input name="group1" type="radio" id="test1"/>
-      <label for="test1">Red</label>
-    </p>
-    <p>
-      <input name="group1" type="radio" id="test2"/>
-      <label for="test2">Yellow</label>
-    </p>
-    <p>
-      <input name="group1" type="radio" id="test3"/>
-      <label for="test3">Green</label>
-    </p>
-    <p>
-      <input name="group1" type="radio" id="test4" disabled="disabled" />
-      <label for="test4">Disabled</label>
-    </p>
-    </fieldset>
-    
-    
-<!-- Switch ------------------------>
-    <fieldset title="Extras">
-    <legend>Switch</legend>
-    <ul>
-    <li>
-        <ol>
-        <li>
-        <div class="switch">
-        <label>
-          Off
-          <input type="checkbox">
-          <span class="lever"></span>
-          On
-        </label>
-        </div>
-        </li>
         
-        <li>
-        <div class="switch">
-        <label>
-          Off
-          <input type="checkbox">
-          <span class="lever"></span>
-          On
-        </label>
-        </div>
-        </li>
         
-        </ol>
-    </li>
-    </ul>
-    </fieldset>
-    
-<!-- Text area ------------------------>
-
-    <fieldset>
-    <legend>Text area</legend>
-    <label for="userComment"></label>
-    <textarea placeholder="Your message"></textarea>
-    </fieldset>
-    
 <!-- Checkbox ------------------------>
-
-    <fieldset>
-    <legend>Checkbox</legend>
+   
+    <h2>Checkbox</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, nemo. Deleniti aut esse, nisi qui. Nisi ad voluptatem repellat possimus distinctio, et, iure! Obcaecati nisi sit nobis magnam eveniet illo.</p>
+        
+    <pre><code>
+    &lt;div <span class="plumageClass">class="col-lg-8"</span>&gt;
+    &lt;div <span class="plumageClass">class="row"</span>&gt;
+    &lt;<span class="keyTag">input</span> <span class="plumage">type="checkbox"</span> value="yes" checked id="subscribe" /&gt;
+    &lt;<span class="keyTag">label</span> for="subscribe">Subscribe to the newsletter&lt;/<span class="keyTag">label</span>&gt;
+    &lt;/div&gt;
+    &lt;<span class="keyTag">input</span> <span class="plumage">type="checkbox"</span> id="copyMyself"/&gt;
+    &lt;<span class="keyTag">label</span> for="copyMyself"&gt;Include a copy to yourself&lt;/<span class="keyTag">label</span>&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    </code></pre>
+    
+    <h3>Displays:</h3>
+    <fieldset title="">
+    <div class="col-lg-8">
     <div class="row">
-    <div class="col-lg-4">
-    </div>
-    <div class="col-lg-4">
-    <div class="row" style="padding-bottom:1em;">
     <input type="checkbox" value="yes" checked id="subscribe" />
     <label for="subscribe">Subscribe to the newsletter</label>
     </div>
-   
     <div class="row">
     <input type="checkbox" id="copyMyself"/>
     <label for="copyMyself">Include a copy to yourself</label>
     </div>
-    </div>
-    
-<!-- Submit Button ------------------------>
-    <div class="col-lg-4">
-    <br/>
-    <button type="submit" style="margin:.5em auto .5em 0;">Send</button> 
-    </div>
-    </div>
+    </div>       
     </fieldset>
     
-</form>
+    
+    
+<!-- Radio Buttons ------------------------>
+   
+    <h2>Radio Buttons</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit alias voluptatibus aperiam et, neque voluptatem. Voluptas velit, possimus repellendus, voluptatem sapiente iste ea? Dicta nihil voluptates cupiditate quos sequi nostrum.</p>
+        
+    <pre><code>
+    &lt;p&gt;
+    &lt;<span class="keyTag">input</span> name="group1" <span class="plumage">type="radio"</span> id="test1"/&gt;
+    &lt;<span class="keyTag">label</span> for="test1"&gt;Radio Button 1&lt;/<span class="keyTag">label</span>&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+    &lt;<span class="keyTag">input</span> name="group1" <span class="plumage">type="radio"</span> id="test2"/&gt;
+    &lt;<span class="keyTag">label</span> for="test2">Radio Button 2&lt;/<span class="keyTag">label</span>&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+    &lt;<span class="keyTag">input</span> name="group1" <span class="plumage">type="radio"</span> id="test4" <span class="plumage">disabled="disabled"</span> /&gt;
+    &lt;<span class="keyTag">label</span> for="test4"&gt;Disabled Button&lt;/<span class="keyTag">label</span>&gt;
+    &lt;/p&gt;
+    </code></pre>
+    
+    
+    <h3>Displays:</h3>
+       
+    <fieldset title="">
+    <p>
+      <input name="group1" type="radio" id="test1"/>
+      <label for="test1">Label</label>
+    </p>
+    <p>
+      <input name="group1" type="radio" id="test2"/>
+      <label for="test2">Label</label>
+    </p>
+    <p>
+      <input name="group1" type="radio" id="test4" disabled="disabled" />
+      <label for="test4">Disabled Button</label>
+    </p>
+    </fieldset>
+
+ <!-- Switch ------------------------>
+   
+    <h2>Switch</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur sit facilis, nemo repellat in esse facere minus quidem ratione aperiam alias deleniti voluptatem ipsum unde eligendi, voluptatum quos aliquam neque!</p>
+        
+    <pre><code>
+    &lt;div <span class="plumageClass">class="switch"</span>&gt;
+    &lt;<span class="keyTag">label</span>&gt;
+    Off
+    &lt;<span class="keyTag">input</span> <span class="plumage">type="checkbox"</span>&gt;
+    &lt;span <span class="plumageClass">class="lever"</span>&gt;&lt;/span&gt;
+    On
+    &lt;/<span class="keyTag">label</span>&gt;
+    &lt;/div&gt;
+    </code></pre>
+    
+    
+    <h3>Displays:</h3>
+    <fieldset title="">
+    <div class="switch">
+    <label>
+    Off
+    <input type="checkbox">
+    <span class="lever"></span>
+    On
+    </label>
+    </div>
+    </fieldset>
+
+
+ <!-- Submit Button ------------------------>
+   
+    <h2>Submit Button</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur sit facilis, nemo repellat in esse facere minus quidem ratione aperiam alias deleniti voluptatem ipsum unde eligendi, voluptatum quos aliquam neque!</p>
+        
+    <pre><code>
+    &lt;div <span class="plumageClass">class="col-lg-4"</span>&gt;
+    &lt;<span class="keyTag">button</span> <span class="plumage">type="submit"</span>&gt;Send&lt;/<span class="keyTag">button</span>&gt; 
+    &lt;/div&gt;
+    </code></pre>
+    
+    <h3>Displays:</h3>
+    <fieldset title="">
+    <div class="col-lg-4">
+    <button type="submit" style="margin:.5em auto .5em 0;">Send</button> 
+    </div>
+    </fieldset>
+  
+  
+<!-- Text Area ------------------------>
+   
+    <h2>Text Area</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur sit facilis, nemo repellat in esse facere minus quidem ratione aperiam alias deleniti voluptatem ipsum unde eligendi, voluptatum quos aliquam neque!</p>
+        
+    <pre><code>
+    &lt;<span class="keyTag">label</span> for="userComment"&gt;&lt;/<span class="keyTag">label</span>&gt;
+    &lt;<span class="keyTag">textarea</span> placeholder="Your message"&gt;&lt;/<span class="keyTag">textarea</span>&gt;
+    </code></pre>
+    
+    <h3>Displays:</h3>
+    <fieldset title="">
+    <label for="userComment"></label>
+    <textarea placeholder="Your message"></textarea>
+    </fieldset>
+         
+<!-- Input Number (to be stylized) ------------------------>
+   
+    <h2>Input Number</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur sit facilis, nemo repellat in esse facere minus quidem ratione aperiam alias deleniti voluptatem ipsum unde eligendi, voluptatum quos aliquam neque!</p>
+        
+    <pre><code>
+    &lt;<span class="keyTag">label</span> for="age"&gt;Age&lt;/label&gt;
+    &lt;<span class="keyTag">input</span> <span class="plumage">type="number"</span> name="age"/&gt;
+    </code></pre>
+    
+    <h3>Displays:</h3>
+    <fieldset title="">
+    <label for="age">Age</label>
+    <input type="number" name="age" />
+    </fieldset>      
+    
+</div>
+</div>
 </div>
 
 </body>
