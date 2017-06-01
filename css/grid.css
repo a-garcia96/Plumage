@@ -7,21 +7,6 @@
 * GRID SYSTEM
 */
 
-/*TEMPORARY RULES*/
-*{
-  box-sizing: border-box;
-}
-
-body{
-  background-color: #eeeeee;
-}
-
-h1{
-  text-align: center;
-  color: #333333;
-}
-/*END TEMPORARY RULES*/
-
 
 /*CONTENT CONTAINER BASED ON 960PX*/
 .container{
