@@ -9,6 +9,7 @@ fieldset {
     margin: 2.5em 2em;
     padding: 2em;
     border-width: 1px;
+    
 }
 
 legend {
@@ -26,7 +27,9 @@ label {
     display: block;
     font-size: 1.2em;
     padding-bottom: .8em;
+    margin-right: 1rem;
     color: #333;
+    margin-bottom: 1rem;
 }
 
 input[type="submit"],
@@ -45,6 +48,8 @@ input[type="button"] {
     cursor: pointer;    
     box-sizing: border-box;
     box-shadow: 3px 3px 5px #ccc;
+    margin: 2em 0;
+
 }
 
 .button, button {
@@ -54,6 +59,7 @@ input[type="button"] {
     font-weight: 300;
     font-size: 1.2rem;
     box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
+    margin-left: 0;
 }
 .button:hover,
 button:hover,
