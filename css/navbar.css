@@ -101,6 +101,7 @@ body{
   right: 40px;
   z-index: 15;
   border-radius: 10px;
+  transition: all 1ms ease;
 }
 
 .navbar-menu-icon:before{
@@ -111,7 +112,8 @@ body{
   display: block;
   position: absolute;
   top: -6px;
-  border-radius: 10px
+  border-radius: 10px;
+  transition: all .5s ease;
 }
 
 .navbar-menu-icon:after{
@@ -122,7 +124,26 @@ body{
   display: block;
   position: absolute;
   top: 6px;
-  border-radius: 10px
+  border-radius: 10px;
+  transition: all .5s ease;
+}
+
+/*ANIMATION THAT TURNS HAMBURGER MENU INTO X BUTTON*/
+.x{
+  visibility: hidden;
+  transition: visibility 1ms ease;
+}
+
+.x:before{
+  transform: translateY(6px) rotate(45deg);
+  transition: transform .5s ease;
+  visibility: visible;
+}
+
+.x:after{
+  transform: translateY(-6px) rotate(-45deg);
+  transition: transform .5s ease;
+  visibility: visible;
 }
 
 /*HIDES DESKTOP NAV MENU FOR MOBILE AND TABLET DISPLAY*/
