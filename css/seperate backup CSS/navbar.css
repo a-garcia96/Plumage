@@ -14,7 +14,6 @@
 *This is noticable on mobile view*/
 body{
   margin: 0;
-  background-color: #EEEEEE;
 }
 
 /* ------------------------NAVBAR------------------------- */
@@ -197,9 +196,5 @@ body{
 
   .nav-menu a:hover{
     color: #81C784;
-  }
-
-  .nav-menu a:active{
-    color:
   }
 }

@@ -1,5 +1,11 @@
 /*  Zero Out Your Margins And Padding  */
 
+*:before, *:after, *{
+  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+}
+
 body, html, div, blockquote, img, label,figure, p, h1, h2, h3, h4, h5, h6, pre, ul,
 ol, li, dl, dt, dd, form, a, fieldset, input, th, td
 {
@@ -11,8 +17,10 @@ margin: 0; padding: 0; border: 0; outline: none;
 html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
 }
-
 
 /* Control Of The Elements */
 
