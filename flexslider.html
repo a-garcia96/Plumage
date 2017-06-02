@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1"> 
+    <title>Flexslider Example</title>
+    
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/grid.css" />
+    <link rel="stylesheet" type="text/css" href="../css/plumage.css" />
+    <link rel="stylesheet" type="text/css" href="../css/flexslider.css" />
+    
+
+    <style>
+        .noLeftMargin { margin-left:0; }
+    </style>
+    
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+   
+   <script type="text/javascript">
+    $(document).ready(function(){
+        $('.flexslider').flexslider({
+            animation: "slide"
+        });
+    });
+    </script>
+    
+</head>
+<body>
+   <div class="container">
+        <section class="row">
+            <div class="col-md-2"></div>
+            <article class="col-md-8">
+                <h1>Simple Slider</h1>
+                    <p class="noLeftMargin">Plumage makes it easy to show off images and more with this jquery flexslider.</p>
+                    <div class="flexslider">
+                        <ul class="slides">
+                          <li><img src="../images/mm_tippy.jpg" alt="three headed red monster drawing"></li>
+                           <li><img src="../images/mm_ppp.jpg" alt="green and red monster drawing">
+                           <p class="flex-caption">Add a caption</p></li>
+                           <li><img src="../images/mm_scooter.jpg" alt="blue monster with rainbow wings drawing">
+                           <p class="flex-caption txt-center">Center the text</p></li>
+                           <li><img src="../images/mm_ss.jpg" alt="long neck monster drawing">
+                           <p class="flex-caption txt-right">Or right-hand justify</p></li>
+                           <li><img src="../images/mm_tres.jpg" alt="three headed purple monster drawing"></li>
+                       </ul>
+                    </div>
+                    <p class="noLeftMargin">Just add a line of script and two classes to your html. One more, for three total classes, if you want captions.</p>
+               </article>
+               <div class="col-md-2"></div>       
+       </section>
+   </div>    
+    
+    <script type="text/javascript" src="../js/jquery.flexslider-min.js"></script>
+</body>
+</html>
