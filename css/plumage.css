@@ -29,7 +29,7 @@
 /* ------------------------FONTS------------------------- */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,700');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,400,700');
 
 /* ---------------------------Grid---------------------------- */
 
@@ -1286,9 +1286,9 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
 
 /*The navigation for the mobile view of the nav bar. default slides out from right to left*/
 
-.mobile-nav {
+.nav-mobile-menu {
   height: 100vh;
-  background-color: #00BCD4;
+  background-color: #eee;
   width: 16.563em;
   position: fixed;
   right: -17.188em;
@@ -1299,21 +1299,21 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
   /*NEEDS TRANSITION PROPERTY HERE FOR NAVIGATION TO SLIDE BACK IN INSTEAD OF SNAPPING CLOSED*/
 }
 
-.mobile-nav ul {
+.nav-mobile-menu ul {
   list-style: none;
   position: relative;
   top: 10%;
   padding-left: 10px;
 }
 
-.mobile-nav li {
+.nav-mobile-menu li {
   margin-bottom: 15px;
 }
 
-.mobile-nav a {
+.nav-mobile-menu a {
   text-decoration: none;
   font-size: 2em;
-  color: white;
+  color: #333;
 }
 
 .openNav {
@@ -1329,7 +1329,7 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
 
 .navbar-brand {
   margin: 0;
-  margin-top: 7px;
+  padding-left: 20px;
   font-weight: 300;
   font-size: 2em;
   width: 100px;
@@ -1338,7 +1338,8 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
 
 .navbar-logo {
   float: left;
-  max-width: 15%;
+  max-width: 50px;
+  max-height: auto;
 }
 
 
@@ -1465,26 +1466,38 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
   position: relative;
   top: 80px;
   text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 4px black;
 }
 
-.billboard h1 {
+.billboard h1{
   padding: 15% 5%;
   color: #fff;
-  font-size: 1.5em;
   margin: 0;
+  font-weight: 100;
 }
 
+.tagline{
+  color: #fff;
+  text-shadow: 2px 2px 4px black;
+}
 
 /* ------------------------ ANYTHING LARGER THAN TABLET SCREEN SIZES ------------------------- */
 
 @media screen and (min-width: 992px) {
   .billboard h1 {
-    padding: 10% 0;
-    font-size: 2.5em;
+    padding: 10% 0 0 0;
+    font-size: 8rem;
+    text-transform: uppercase;
     text-shadow: 2px 2px 4px black;
   }
-}
 
+  .tagline{
+    color: #fff;
+    text-shadow: 2px 2px 4px black;
+    font-size: 2rem;
+  }
+}
 
 /* ----------- FLEX SLIDER ----------------- */
 
