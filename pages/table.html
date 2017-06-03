@@ -3,19 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Tables</title>
     
     <link rel="stylesheet" type="text/css" href="../css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="../css/grid.css" />
-    <link href="https://fonts.googleapis.com/css?family=Barrio|Droid+Sans" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../css/testMain.css" />
-    <link rel="stylesheet" type="text/css" href="../css/tables.css" />
+    <link rel="stylesheet" type="text/css" href="../css/plumage.css" />
     
-    <title>Test Page</title>
 </head>
 <body>
-   <section>
-    <h1>Tables</h1>
+   <section class="row">
+    <h1 class="under-line txt-center">Tables</h1>
     <h2>Basic</h2>
+    <div class="col-md-12">
     <table>
         <caption>Developer Email List</caption>
         <thead>
@@ -40,6 +38,35 @@
                 <td data-label="First Name">Paulo</td>
                 <td data-label="Last Name">Brazil</td>
                 <td data-label="Email">pabrazil@plumage</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <h2>Border</h2>
+    <table class="border">
+        <caption></caption>
+        <thead>
+            <tr>
+                <th>Sea Creatures</th>
+                <th>Name</th>
+                <th>Lifespan</th>
+            </tr>
+        </thead> 
+        <tbody>
+            <tr>
+                <td data-label="Sea Creatures"><img src="../images/01.jpg" alt="sea turtle" class="centerImg" /></td>
+                <td data-label="Name">Sea Turtle</td>
+                <td data-label="Lifespan">Up to 80 years</td>
+            </tr>
+            <tr>
+                <td data-label="Sea Creatures"><img src="../images/02.jpg" alt="horn shark" /></td>
+                <td data-label="Name">Horn Shark</td>
+                <td data-label="Lifespan">12-25 years</td>
+            </tr>
+            <tr>
+                <td data-label="Sea Creatures"><img src="../images/03.jpg" alt="sea lion" /></td>
+                <td data-label="Name">Sea Lion</td>
+                <td data-label="Lifespan">20-30 years</td>
             </tr>
         </tbody>
     </table>
