@@ -11,22 +11,22 @@
 - GRID - line 31
 - ICONS - line 145
 - BASE STYLES - line 177
-- LINKS - line 281 
-- BUTTONS - line 287 
-- FORMS - line 409 
-- LISTS - line 758 
-- TABLES - line 768 
-- SPACING - line 817 
-- UTILITY CLASSES - line 825 
+- LINKS - line 281
+- BUTTONS - line 287
+- FORMS - line 409
+- LISTS - line 758
+- TABLES - line 768
+- SPACING - line 817
+- UTILITY CLASSES - line 825
 - NAVIGATION - line 867
-- BILLBOARD - line 1008 
+- BILLBOARD - line 1008
 - FLEXSLIDER - line 1031
 */
 
 /* ------------------------FONTS------------------------- */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,700');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,400,700');
 
 /* ---------------------------GRID---------------------------- */
 
@@ -210,7 +210,7 @@ h6 { font-size: .95rem; line-height: 1.6; letter-spacing: 0; } /*15px*/
   h1, h2, h3, h4, h5, h6 { margin-top: 1rem; }
   h1 { font-size: 3.125rem; } /*50px*/
   h2 { font-size: 2.625rem; } /*42px*/
-  h3 { font-size: 2.25rem; } /*36px*/  
+  h3 { font-size: 2.25rem; } /*36px*/
   h4 { font-size: 1.875rem; } /*30px*/
   h5 { font-size: 1.5rem; } /*24px*/
   h6 { font-size: 0.95rem; } /*15px*/
@@ -286,7 +286,7 @@ a:focus, a:hover { color: #d3d3d3; }
 
 /* ------------------------BUTTONS------------------------- */
 
-button .material-icons { font-size: inherit; line-height: inherit;} 
+button .material-icons { font-size: inherit; line-height: inherit;}
 
 .button-xs { font-size: 50%; line-height: 1.5rem; }
 
@@ -880,7 +880,7 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem; }
 
 /*The navigation for the mobile view of the nav bar. default slides out from right to left*/
 
-.mobile-nav {
+.nav-mobile-menu {
   height: 100vh;
   background-color: #00BCD4;
   width: 16.563em;
@@ -893,16 +893,16 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem; }
   /*NEEDS TRANSITION PROPERTY HERE FOR NAVIGATION TO SLIDE BACK IN INSTEAD OF SNAPPING CLOSED*/
 }
 
-.mobile-nav ul {
+.nav-mobile-menu ul {
   list-style: none;
   position: relative;
   top: 10%;
   padding-left: 10px;
 }
 
-.mobile-nav li { margin-bottom: 15px; }
+.nav-mobile-menu li { margin-bottom: 15px; }
 
-.mobile-nav a { text-decoration: none; font-size: 2em; color: #fff; }
+.nav-mobile-menu a { text-decoration: none; font-size: 2em; color: #fff; }
 
 .openNav { transition: 0.5s; right: 0; }
 
@@ -913,13 +913,14 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem; }
 .navbar-brand {
   margin: 0;
   margin-top: 7px;
+  padding-left: 20px;
   font-weight: 300;
   font-size: 2em;
   width: 100px;
   display: inline-block;
 }
 
-.navbar-logo { float: left; max-width: 15%; }
+.navbar-logo { float: left; max-width: 60px; }
 
 /*END NAVBAR BRANDING STLYES*/
 
@@ -990,7 +991,7 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem; }
 /* ------------------------ ANYTHING LARGER THAN TABLET SCREEN SIZES ------------------------- */
 
 @media screen and (min-width: 992px) {
-  .mobile-nav { display: none; }
+  .nav-mobile-menu { display: none; }
   .navbar-menu-icon { display: none; }
   .nav-menu { float: right; margin-top: 5px; display: block; }
   .nav-menu ul { list-style: none; margin: 0; padding: 0; }
@@ -1013,19 +1014,29 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem; }
   position: relative;
   top: 80px;
   text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 4px black;
 }
 
 .billboard h1 {
   padding: 15% 5%;
-  color: #fff;
   font-size: 1.5em;
   margin: 0;
+  font-weight: 100;
+}
+
+.tagline{
+  font-size: 2rem;
+}
+
+.billboard h3{
+  margin-top: 10%;
 }
 
 /* ------------------------ ANYTHING LARGER THAN TABLET SCREEN SIZES ------------------------- */
 
 @media screen and (min-width: 992px) {
-  .billboard h1 { padding: 10% 0; font-size: 2.5em; text-shadow: 2px 2px 4px black; }
+  .billboard h1 { padding: 10% 0 0 0; font-size: 10rem;}
 }
 
 /* ---------------------------------- FLEX SLIDER ----------------------------------------- */
