@@ -1,3 +1,7 @@
+.navbar{
+  background-color: #009688;
+}
+
 .billboard{
   background: url(../images/hero.jpg) center left/cover;
 }
