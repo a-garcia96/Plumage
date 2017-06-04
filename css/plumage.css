@@ -59,6 +59,8 @@
   width: 100%;
   min-height: 1px;
   float: left;
+  position: relative;
+  top: 6rem;
 }
 
 [class^="col"] {
@@ -144,12 +146,11 @@
 
 /* ------------------------ICONS-------------------------------*/
 
-@font-face {
+/*@font-face {
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: url(https://example.com/MaterialIcons-Regular.eot);
-  /* For IE6-8 */
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
   src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'), url(https://example.com/MaterialIcons-Regular.woff) format('woff'), url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
 }
 
@@ -172,7 +173,7 @@
   -moz-osx-font-smoothing: grayscale;
   /* Support for IE. */
   font-feature-settings: 'liga';
-}
+}*/
 
 /* ------------------------BASE STYLES------------------------- */
 
@@ -821,7 +822,7 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem; }
 
 .border { border: 1px solid #a9a9a9; }
 
-.centerImg { text-align: center; }
+.center-img { text-align: center; }
 
 .clearIt { content: ""; clear: both; display: table; }
 
@@ -848,6 +849,12 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem; }
 .txt-center { text-align: center; }
 
 .under-line { border-bottom: 1px solid #a9a9a9; }
+
+.card-icon{
+  display: block;
+  width: 48px;
+  margin: auto;
+}
 
 @media screen and (min-width:600px) {
   .feature { height: 4.1rem; margin: 1.6rem 0; }
