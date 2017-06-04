@@ -92,9 +92,9 @@
 /* ------------------------ TABLET GRID SYSTEM------------------------- */
 
 @media screen and (min-width: 600px) {
- /* [class^="col-xl"], [class^="col-lg"], [class^="col-md"] {
+  [class^="col-md"], [class^="col-lg"], [class^="col-xl"]{
     margin: 0 1.9%;
-  } */
+  }
   .col-md-1 { width: 3.93%; }
   .col-md-2 { width: 12.66%; }
   .col-md-3 { width: 21.4%; }
@@ -826,7 +826,7 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem; }
 
 .clearIt { content: ""; clear: both; display: table; }
 
-.feature { height: 3.1rem; margin: 1.25em 0; }
+.feature { height: 3.1rem;}
 
 .feature-box { min-height: 6.875rem; }
 
@@ -857,7 +857,7 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem; }
 }
 
 @media screen and (min-width:600px) {
-  .feature { height: 4.1rem; margin: 1.6rem 0; }
+  .feature { height: 4.1rem;}
   .feature-box { min-height: 9.4rem; }
 }
 
