@@ -629,12 +629,12 @@ input[type="checkbox"], input[type="radio"] { display: inline-block; }
 [type="checkbox"]:checked+label:before {
   top: -4px;
   left: -5px;
-  width: 4px;
+  width: 6px;
   height: 17px;
-  border-top: 3px solid transparent;
-  border-left: 3px solid transparent;
-  border-right: 3px solid rgba(145, 232, 66, 1);
-  border-bottom: 3px solid rgba(145, 232, 66, 1);
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid rgba(145, 232, 66, 1);
+  border-bottom: 2px solid rgba(145, 232, 66, 1);
   transform: rotate(50deg);
   backface-visibility: hidden;
   transform-origin: 100% 100%;
