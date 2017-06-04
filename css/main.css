@@ -6,6 +6,9 @@
   background: url(../images/hero.jpg) center left/cover;
 }
 
+footer{
+  background-color: #009688;
+}
 /* ---------for Table.html--------- */
 .bg1 {background-color: rgba(95,158,160,.1); }
 .bg2 {background-color: rgba(255,215,0,.1); }
