@@ -826,6 +826,7 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem; }
 
 .clearIt { content: ""; clear: both; display: table; }
 
+/*FOR SOME REASON FEATURE CLASSES ARE MESSING WITH GRID SYSTEM CAUSING THE COLUMNS TO NOT STACK AT MOBILE VIEW*/
 .feature { height: 3.1rem;}
 
 .feature-box { min-height: 6.875rem; }
