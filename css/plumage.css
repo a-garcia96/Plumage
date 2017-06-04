@@ -440,10 +440,10 @@ legend {
 label {
   display: block;
   font-size: 1.2em;
-  padding-bottom: .8em;
+  padding-bottom: 0em;
   margin-right: 1rem;
   color: #333;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 input[type="submit"], input[type="reset"], input[type="button"] {
@@ -717,6 +717,9 @@ input[type=range]:-moz-focusring { outline: none; outline-offset: 0px; }
 ===========================================*/
 input[type="number"] {
     height: 100px; }
+input[type="number"]:focus {
+    border-bottom: 1px solid rgba(145, 232, 66, 1);
+}
 
 .input-number-wrapper {
     position: relative;
