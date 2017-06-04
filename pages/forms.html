@@ -1,38 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale= 1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Plumage | A CSS framework</title>
+  <link rel="icon" href="../images/logo.png">
 
-    <title>Forms' Plumage.io</title>
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/grid.css">
-    <link rel="stylesheet" href="../css/forms.css">
-    
-    <style rel="stylesheet">
-    @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
-        
-    body {
-        font-family: 'Roboto', sans-serif; }
-        h1 {
-            font-size: 3rem;
-            padding: 1rem;
-            text-align: right; }
-        h2 {
-            font-size: 1.5rem;
-            padding: 0 1rem;
-            margin: 1rem 0; }
-        h3 {
-            padding: 0 1rem;
-            margin: .5rem 0 1.5rem 0; }
-        p {
-            line-height: 1.4rem;
-            margin: .5rem .5rem .5rem 1rem; }
-        ul {
-            margin-left: 2rem; }
-        li {
-            margin: .5rem 0; }
-        
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/plumage.css">
+  <link rel="stylesheet" href="../css/main.css">
+  
+  <style type="text/css">        
         code {
             font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
             font-size: 1rem; }
@@ -59,12 +38,41 @@
         .keyTag {
             color: #000;
         }
-        
-    </style>
-    
+    </style>  
 </head>
 <body>
-<div class="container">
+  <header class="navbar">
+    <div class="container-lg">
+      <img src="../images/logo.png" alt="logo" class="navbar-logo">
+      <h1 class="navbar-brand">Plumage</h1>
+      <!-- MENU BUTTON MUST GO HERE TO ENSURE FUNCTIONALITY -->
+      <div class="navbar-menu-icon"></div>
+      <!-- MOBILE NAV MUST GO BEFORE DESKTOP NAV IN ORDER TO FUNCTION PROPERLY -->
+      <nav class="nav-mobile-menu">
+        <ul>
+          <li><a href="#">Get Started</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Components</a></li>
+          <li><a href="#">Download</a></li>
+        </ul>
+      </nav>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#">Get Started</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Components</a></li>
+          <li><a href="#">Download</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="billboard">
+    <h1>Plumage</h1>
+    <h2 class="tagline">Modern. Beautiful. Simple.</h2>
+    <h3>Stop thinking and start building. A css framework tailored just for you.</h3>
+  </section>
+  
+  <div class="container">
 <div class="row">
 <div class="col-md-12">
 
@@ -312,10 +320,28 @@
     <label for="age">Age</label>
     <input type="number" name="age" />
     </fieldset>      
-    
 </div>
 </div>
 </div>
-
+  <script type="text/javascript" src="../js/navbar.js"></script>
 </body>
 </html>
+
+<!--    h1 {
+            font-size: 3rem;
+            padding: 1rem;
+            text-align: right; }
+        h2 {
+            font-size: 1.5rem;
+            padding: 0 1rem;
+            margin: 1rem 0; }
+        h3 {
+            padding: 0 1rem;
+            margin: .5rem 0 1.5rem 0; }
+        p {
+            line-height: 1.4rem;
+            margin: .5rem .5rem .5rem 1rem; }
+        ul {
+            margin-left: 2rem; }
+        li {
+            margin: .5rem 0; }
