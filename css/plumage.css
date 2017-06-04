@@ -712,6 +712,68 @@ input[type=range]::-moz-range-thumb {
 
 input[type=range]:-moz-focusring { outline: none; outline-offset: 0px; }
 
+
+/* I N P U T    T Y P E = " N U M B E R "
+===========================================*/
+input[type="number"] {
+    height: 100px; }
+
+.input-number-wrapper {
+    position: relative;
+      }
+      
+.input-number-wrapper:after {
+    content: "\25B2";
+    pointer-events: none;
+    z-index: 20;
+    cursor: default;
+
+    padding: 0;
+    position: absolute;
+    color: #666;
+    left: 100%;
+    margin-left: -20px;
+    margin-top: 37px;
+    font-size: 16px; }
+
+.input-number-wrapper:before {
+    content: "\25BC";
+    pointer-events: none;
+    z-index: 20;
+    cursor: default;
+    padding: 0;
+    position: absolute;
+    color: #666;
+    left: 100%;
+    bottom: 0;
+    margin-left: -20px;
+    margin-bottom: 5px;
+    font-size: 16px; }
+      
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 0;
+    font-size: 100px; }
+      
+input[type=number]::inner-spin-button {
+    opacity: 0;
+    font-size: 100px;       
+      }
+      
+/* Firefox: Removed span style and input controls */
+@-moz-document url-prefix() {
+    .input-number-wrapper:after {
+        content: ""; }
+    .input-number-wrapper:before {
+        content: ""; }
+}
+input[type=number] {
+    -moz-appearance: textfield; }
+      
+input[type="number"] {
+    width: 70px;
+    min-width: 70px;
+    padding: 6px 0px 0px 0px; }
+
 /* S W I T C H
 ==================================*/
 

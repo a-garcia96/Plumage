@@ -17,3 +17,46 @@ footer{
 .p1 { font-size:1.3rem; }
 .noMarginB { margin-bottom:0; }
 /* ---------end Table.html--------- */
+
+
+/*  Documentation | Language Markup Styles
+===========================================*/
+      pre > code {
+          padding: 1rem;
+          margin: 0;
+
+      }
+        code {
+            padding: 0;
+            margin: 0;
+            
+            font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+            font-size: .7rem; 
+            background-color: #ccc;
+            overflow: auto;
+            word-wrap: break-word; 
+      }
+        
+        pre {
+            padding: 0;
+            margin:0;
+            
+            background-color: transparent;
+            color: #020202;
+            border: 1px solid #fff;
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word; }
+        
+        .languageMarkup { }
+        
+        .plumage {
+            color: blue;
+        }
+        .plumageClass {
+            color: darkred;
+        }
+        .keyTag {
+            color: darkgreen;
+        }
