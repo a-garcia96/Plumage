@@ -16,11 +16,11 @@
 - FORMS - line 409
 - LISTS - line 758
 - TABLES - line 768
-- SPACING - line 817
-- UTILITY CLASSES - line 825
-- NAVIGATION - line 867
-- BILLBOARD - line 1008
-- FLEXSLIDER - line 1031
+- SPACING - line 812
+- UTILITY CLASSES - line 820
+- NAVIGATION - line 862
+- BILLBOARD - line 1004
+- FLEXSLIDER - line 1033
 */
 
 /* ------------------------FONTS------------------------- */
@@ -773,16 +773,11 @@ table thead { display: none; }
 
 table tr { margin-bottom: 10px; display: block; }
 
-table th { text-transform: uppercase; font-size: 14px; letter-spacing: 1px; }
+table th { text-transform: uppercase; letter-spacing: 1px; }
 
 table th, table td { padding: 10px; text-align: center; }
 
-table td {
-  display: block;
-  text-align: right;
-  font-size: 13px;
-  border-bottom: 1px dotted #ccc;
-}
+table td { display: block; text-align: right; border-bottom: 1px dotted #ccc; }
 
 table td:before {
   content: attr(data-label);
@@ -799,7 +794,7 @@ table.border td { border: 1px solid #ccc; }
 
 .zebra caption, .zebra tr:nth-of-type(even) { background-color: #eee; } /* zebra striping */
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 600px) {
   table tr { padding: 5px; display: table-row; }
   table thead { display: table-header-group; background-color: #ddd; }
   table.border tr { background-color: inherit; }
@@ -824,7 +819,7 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem; }
 
 /* ------------------------UTILITY CLASSES------------------------- */
 
-.border { border: 1px solid darkgray; }
+.border { border: 1px solid #a9a9a9; }
 
 .centerImg { text-align: center; }
 
@@ -852,7 +847,7 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem; }
 
 .txt-center { text-align: center; }
 
-.under-line { border-bottom: 1px solid #000; }
+.under-line { border-bottom: 1px solid #a9a9a9; }
 
 @media screen and (min-width:600px) {
   .feature { height: 4.1rem; margin: 1.6rem 0; }
@@ -1025,13 +1020,9 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem; }
   font-weight: 100;
 }
 
-.tagline{
-  font-size: 2rem;
-}
+.tagline { font-size: 2rem; }
 
-.billboard h3{
-  margin-top: 10%;
-}
+.billboard h3{ margin-top: 10%; }
 
 /* ------------------------ ANYTHING LARGER THAN TABLET SCREEN SIZES ------------------------- */
 

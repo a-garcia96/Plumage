@@ -1,3 +1,11 @@
 .billboard{
   background: url(../images/hero.jpg) center left/cover;
 }
+
+/* ---------for Table.html--------- */
+.bg1 {background-color: rgba(95,158,160,.1); }
+.bg2 {background-color: rgba(255,215,0,.1); }
+.bg3 {background-color: rgba(95,158,160,.3); }
+.p1 { font-size:1.3rem; }
+.noMarginB { margin-bottom:0; }
+/* ---------end Table.html--------- */

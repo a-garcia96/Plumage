@@ -7,113 +7,183 @@
     
     <link rel="stylesheet" type="text/css" href="../css/reset.css" />
     <link rel="stylesheet" type="text/css" href="../css/plumage.css" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
     
 </head>
 <body>
    <section class="row">
-    <h1 class="under-line txt-center">Tables</h1>
-    <h2>Basic</h2>
-    <div class="col-md-12">
-    <table>
-        <caption>Developer Email List</caption>
-        <thead>
-            <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Email</th>
-            </tr>
-        </thead> 
-        <tbody>
-            <tr>
-                <td data-label="First Name">Alex</td>
-                <td data-label="Last Name">Smith</td>
-                <td data-label="Email">alsmith@plumage</td>
-            </tr>
-            <tr>
-                <td data-label="First Name">Natalia</td>
-                <td data-label="Last Name">Jones</td>
-                <td data-label="Email">najones@plumage</td>
-            </tr>
-            <tr>
-                <td data-label="First Name">Paulo</td>
-                <td data-label="Last Name">Brazil</td>
-                <td data-label="Email">pabrazil@plumage</td>
-            </tr>
-        </tbody>
-    </table>
-    </div>
-    <h2>Border</h2>
-    <table class="border">
-        <caption></caption>
-        <thead>
-            <tr>
-                <th>Sea Creatures</th>
-                <th>Name</th>
-                <th>Lifespan</th>
-            </tr>
-        </thead> 
-        <tbody>
-            <tr>
-                <td data-label="Sea Creatures"><img src="../images/01.jpg" alt="sea turtle" class="centerImg" /></td>
-                <td data-label="Name">Sea Turtle</td>
-                <td data-label="Lifespan">Up to 80 years</td>
-            </tr>
-            <tr>
-                <td data-label="Sea Creatures"><img src="../images/02.jpg" alt="horn shark" /></td>
-                <td data-label="Name">Horn Shark</td>
-                <td data-label="Lifespan">12-25 years</td>
-            </tr>
-            <tr>
-                <td data-label="Sea Creatures"><img src="../images/03.jpg" alt="sea lion" /></td>
-                <td data-label="Name">Sea Lion</td>
-                <td data-label="Lifespan">20-30 years</td>
-            </tr>
-        </tbody>
-    </table>
-    <h2>Zebra</h2>
-    <table class="zebra">
-        <caption>MLB National League West</caption>
-        <thead>
-            <tr>
-                <th>City/State</th>
-                <th>Team</th>
-                <th>Uniform Colors</th>
-                <th>Division Titles</th>
-            </tr>
-        </thead> 
-        <tbody>
-            <tr>
-                <td data-label="City/State">Arizona</td>
-                <td data-label="Team">Diamondbacks</td>
-                <td data-label="Uniform Colors">Sedona Red, Sonoran Sand, Turquoise, Black, White</td>
-                <td data-label="Division Titles">5</td>
-            </tr>
-            <tr>
-                <td data-label="City/State">Colorado</td>
-                <td data-label="Team">Rockies</td>
-                <td data-label="Uniform Colors">Purple, Black, Silver, White</td>
-                <td data-label="Division Titles">-</td>
-            </tr>
-            <tr>
-                <td data-label="City/State">Los Angeles</td>
-                <td data-label="Team">Dodgers</td>
-                <td data-label="Uniform Colors">Dodger Blue, White, Red</td>
-                <td data-label="Division Titles">15</td>
-            </tr>
-            <tr>
-                <td data-label="City/State">San Diego</td>
-                <td data-label="Team">Padres</td>
-                <td data-label="Uniform Colors">Navy Blue, White</td>
-                <td data-label="Division Titles">5</td>
-            </tr>
-            <tr>
-                <td data-label="City/State">San Francisco</td>
-                <td data-label="Team">Giants</td>
-                <td data-label="Uniform Colors">Orange, Black, Gold, Cream</td>
-                <td data-label="Division Titles">8</td>
-            </tr>
-        </tbody>
-    </table>
+        <div class="col-md-12">
+           <h1 class="under-line">Tables</h1>
+       </div>
+        <div class="col-lg-9">
+           <p class="p1">Using regular HTML, Plumage gives you responsive tables that look great on any size screen.</p>
+            <h2 class="noMarginB">Basic</h2>
+       </div>
+        <div class="col-md-10 col-lg-8 col-xl-6"> 
+          <h5 class="noMarginB">Code</h5>
+           <pre><code>
+&lt;div class="col-md-12"&gt;
+    &lt;table&gt;
+        &lt;caption&gt;Developer Email List&lt;/caption&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;First Name&lt;/th&gt;
+                &lt;th&gt;Last Name&lt;/th&gt;
+                &lt;th&gt;Email&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead &gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td data-label="First Name">&gt;Alex&lt;/td&gt;
+                &lt;td data-label="Last Name">&gt;Smith&lt;/td&gt;
+                &lt;td data-label="Email">&gt;asmith@plumage&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td data-label="First Name">&gt;Natalia&lt;/td&gt;
+                &lt;td data-label="Last Name">&gt;Jones&lt;/td&gt;
+                &lt;td data-label="Email">&gt;njones@plumage&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td data-label="First Name">&gt;Paulo&lt;/td&gt;
+                &lt;td data-label="Last Name">&gt;Razil&lt;/td&gt;
+                &lt;td data-label="Email">&gt;prazil@plumage&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+            </code></pre>
+        </div>
+        <div class="col-sm-12">
+            <h5 class="noMarginB">Result</h5>
+        </div>
+        <div class="col-lg-8 bg2">
+            <table>
+                <caption>Developer Email List</caption>
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                    </tr>
+                </thead> 
+                <tbody>
+                    <tr>
+                        <td data-label="First Name">Alex</td>
+                        <td data-label="Last Name">Smith</td>
+                        <td data-label="Email">alsmith@plumage</td>
+                    </tr>
+                    <tr>
+                        <td data-label="First Name">Natalia</td>
+                        <td data-label="Last Name">Jones</td>
+                        <td data-label="Email">najones@plumage</td>
+                    </tr>
+                    <tr>
+                        <td data-label="First Name">Paulo</td>
+                        <td data-label="Last Name">Brazil</td>
+                        <td data-label="Email">pabrazil@plumage</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+       <div class="col-sm-12">
+          <h2 class="noMarginB">Border</h2>
+           <p class="p1">Add the class of <code>.border</code> to <code>&lt;table&gt;</code> to give more definition.</p>
+       </div>
+       <div class="col-md-6">
+           <h5 class="noMarginB">code</h5>
+            <pre><code>&lt;table class="border"&gt;
+        &lt;thead&gt;. . . </code></pre>
+       </div>
+       <div class="col-sm-12">
+            <h5 class="noMarginB">Result</h5>
+        </div>
+        <div class="col-md-12 bg1">
+           
+            <table class="border">
+                <caption></caption>
+                <thead>
+                    <tr>
+                        <th>Sea Creatures</th>
+                        <th>Name</th>
+                        <th>Lifespan</th>
+                    </tr>
+                </thead> 
+                <tbody>
+                    <tr>
+                        <td data-label="Sea Creatures"><img src="../images/01.jpg" alt="sea turtle" class="centerImg" /></td>
+                        <td data-label="Name">Sea Turtle</td>
+                        <td data-label="Lifespan">Up to 80 years</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Sea Creatures"><img src="../images/02.jpg" alt="horn shark" /></td>
+                        <td data-label="Name">Horn Shark</td>
+                        <td data-label="Lifespan">12-25 years</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Sea Creatures"><img src="../images/03.jpg" alt="sea lion" /></td>
+                        <td data-label="Name">Sea Lion</td>
+                        <td data-label="Lifespan">20-30 years</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-sm-12">
+          <h2 class="noMarginB">Zebra</h2>
+            <p class="p1">Add the class of <code>.zebra</code> to <code>&lt;table&gt;</code> to stripe every other row. </p>
+       </div>
+        <div class="col-md-6">
+           <h5 class="noMarginB">code</h5>
+            <pre><code>&lt;table class="zebra"&gt;
+        &lt;thead&gt;. . . </code></pre>
+       </div>
+       <div class="col-sm-12">
+            <h5 class="noMarginB">Result</h5>
+        </div>
+        <div class="col-md-12 bg3">
+            <table class="zebra">
+                <caption>MLB National League West</caption>
+                <thead>
+                    <tr>
+                        <th>City/State</th>
+                        <th>Team</th>
+                        <th>Uniform Colors</th>
+                        <th>Division Titles</th>
+                    </tr>
+                </thead> 
+                <tbody>
+                    <tr>
+                        <td data-label="City/State">Arizona</td>
+                        <td data-label="Team">Diamondbacks</td>
+                        <td data-label="Uniform Colors">Sedona Red, Sonoran Sand, Turquoise, Black, White</td>
+                        <td data-label="Division Titles">5</td>
+                    </tr>
+                    <tr>
+                        <td data-label="City/State">Colorado</td>
+                        <td data-label="Team">Rockies</td>
+                        <td data-label="Uniform Colors">Purple, Black, Silver, White</td>
+                        <td data-label="Division Titles">-</td>
+                    </tr>
+                    <tr>
+                        <td data-label="City/State">Los Angeles</td>
+                        <td data-label="Team">Dodgers</td>
+                        <td data-label="Uniform Colors">Dodger Blue, White, Red</td>
+                        <td data-label="Division Titles">15</td>
+                    </tr>
+                    <tr>
+                        <td data-label="City/State">San Diego</td>
+                        <td data-label="Team">Padres</td>
+                        <td data-label="Uniform Colors">Navy Blue, White</td>
+                        <td data-label="Division Titles">5</td>
+                    </tr>
+                    <tr>
+                        <td data-label="City/State">San Francisco</td>
+                        <td data-label="Team">Giants</td>
+                        <td data-label="Uniform Colors">Orange, Black, Gold, Cream</td>
+                        <td data-label="Division Titles">8</td>
+                    </tr>
+                </tbody>
+            </table>
+       </div>
     </section>
 </body>
 </html>
