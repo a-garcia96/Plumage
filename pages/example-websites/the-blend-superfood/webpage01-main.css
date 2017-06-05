@@ -25,23 +25,22 @@ button, .button {
     border-radius: 0;
 }
 .billboard{
-  background: url(../webpage-example-1/billboard.JPG) center center/cover;
+  background: url(billboard.JPG) center center/cover;
 }
 .billboard h1, .billboard h2 {
     font-family: 'Montserrat', sans-serif;
 }
 
-
-
-
-
 footer{
-    background: url(../webpage-example-1/wood.png) center left/cover;
+    background: url(wood.png) center left/cover;
   }
 footer p {
+    font-size: 1.4rem;
+    color: #fff;
+    text-shadow: 4px 4px 2px #000;
+    height: 100%;
     text-align: center;
-    padding-bottom: 10px;
-    color: black;
+    padding-top: 100px;
 }
 
 
