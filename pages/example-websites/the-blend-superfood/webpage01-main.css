@@ -1,0 +1,47 @@
+/* Paulo Website Example 01 */
+
+@import 
+url('https://fonts.googleapis.com/css?family=Delius+Unicase|Montserrat:400,700');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.navbar {
+    background-color: #d4fa45;
+}
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    min-width: 200px;
+}
+.nav-menu a, .nav-menu a:visited {
+    color: #999;
+}
+button, .button {
+    background-color: #335A07;
+    border: 2px solid #fff;
+    border-radius: 0;
+}
+.billboard{
+  background: url(../webpage-example-1/billboard.JPG) center center/cover;
+}
+.billboard h1, .billboard h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+footer{
+    background: url(../webpage-example-1/wood.png) center left/cover;
+  }
+footer p {
+    text-align: center;
+    padding-bottom: 10px;
+    color: black;
+}
+
+
