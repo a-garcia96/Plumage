@@ -47,11 +47,73 @@
 <div class="row">
 <div class="col-md-12">
    
-    <h1>NEW jQuery Elements</h1>    
+    <h1>jQuery Elements</h1>    
     <p>Plumage.io has some cool jQuery features already styled to help developers and save some time in your coding.</p>
     
     <h4>Highlight Dialog Box</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, deserunt? Quibusdam eveniet hic, tempore impedit aut aliquid pariatur, quae cum, vel obcaecati unde illo assumenda deserunt. Debitis mollitia sapiente, ducimus.</p>
+    <p>Our customized framework is providing 9 spots where you can store different contents to be displayed as a highlight window, which in jQuery is known as Dialog. All that you need to do is start creating as many button tags as you want, in order to show and hide the different contents you have.</p>
+    <p>Then you need include specific classes to each button tag. The classes will create the conextion between the button and the content that you will show. From 1 to 9, you will be adding classes like:</p>
+    <ul>
+        <li>.clickDialog1</li>
+        <li>.clickDialog2</li>
+        <li>.clickDialog3</li>
+        <li>.clickDialog4</li>
+        <li>.clickDialog5</li>
+        <li>.clickDialog6</li>
+        <li>.clickDialog7</li>
+        <li>.clickDialog8</li>
+        <li>.clickDialog9</li>
+    </ul>
+    <p>Then you have to wrap your buttons with a div tag that may wrap everything or each button. By the end of this piece of code, your buttons should look like that:</p>
+    
+    <pre><code>
+    &lt;div class="col-lg-4 dialogButtons">
+    &lt;<span class="keyTag">button</span> class="clickDialog1" type="submit"&gt;
+        Send
+    &lt;/<span class="keyTag">button</span>&gt; 
+    &lt;<span class="keyTag">button</span> class="clickDialog2" type="submit"&gt;
+        Send
+    &lt;/<span class="keyTag">button</span>&gt; 
+    &lt;<span class="keyTag">button</span> class="clickDialog3" type="submit"&gt;
+        Send
+    &lt;/<span class="keyTag">button</span>&gt;
+    &lt;/div&gt;
+    </code></pre>
+    
+    <p>Finally, you will include in the bottom of your HTML the piece of code that you want to display inside the dialog window. This content should keep hidden until the user clicks in the button. Now all that you need is create a <b>&lt;div&gt;</b> tag wrapping the content you have, and include on that a ID that will connect with the specific button that you created above. Like in the first situation, here you also can use up to 9 items per page:</p>
+    <ul>
+        <li>#boxDialog1</li>
+        <li>#boxDialog2</li>
+        <li>#boxDialog3</li>
+        <li>#boxDialog4</li>
+        <li>#boxDialog5</li>
+        <li>#boxDialog6</li>
+        <li>#boxDialog7</li>
+        <li>#boxDialog8</li>
+        <li>#boxDialog9</li>
+    </ul>
+    <p>Then you should include an title attribute inside each div that you have, where you can write the title that you be displayed on the dialog box. A simple content for these div tags could look like that:</p>
+    
+    <pre><code>
+    &lt;div id="boxDialog1" title="Title Number 1"&gt;
+    &lt;img src="../images/01.jpg"/&gt;
+    &lt;p&gt;Lorem ipsum !&lt;/p&gt;
+    &lt;/div&gt;
+    
+    &lt;div id="boxDialog2" title="Title Number 2"&gt;
+    &lt;img src="../images/02.jpg"/&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima dolorum, necessitatibus deserunt quia. Labore, optio reiciendis ipsa quia at neque libero enim ipsam odio voluptate, impedit minus dicta omnis! Distinctio!&lt;/p&gt;
+    &lt;/div&gt;
+    
+    &lt;div id="boxDialog3" title="Number 3"&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima dolorum, necessitatibus deserunt quia. Labore, optio reiciendis ipsa quia at neque libero enim ipsam odio voluptate, impedit minus dicta omnis! Distinctio!&lt;/p&gt;
+    &lt;/div&gt;
+    </code></pre>
+    <p>Now go ahead and test this awesome feature provided by Plumage and jQuery. Click on the buttons bellow to see how the dialog boxes look like.</p>
+    
+    </div>
+    
+    <div class="row">
     
         <div class="col-lg-4 dialogButtons">
             <button class="clickDialog1" type="submit">
@@ -65,7 +127,7 @@
             </button>         
         </div>
     </div>
-                                                            
+    
     <div id="boxDialog1" title="Title Number 1">
     <img src="../images/01.jpg"/>
     <p>Lorem ipsum !</p>
