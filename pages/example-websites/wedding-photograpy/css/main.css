@@ -1,75 +1,28 @@
-.navbar{
-  background-color: #009688;
-}
-
-.navbar-brand a{
-  color: #fff;
-}
-.nav-menu a{
-  color: #fff;
-}
-
-.billboard{
-  background: url(../images/hero.jpg) center left/cover;
-}
-
-footer{
-  background-color: #009688;
-}
-/* ---------for Table.html--------- */
-.bg1 {background-color: rgba(95,158,160,.1); }
-.bg2 {background-color: rgba(255,215,0,.1); }
-.bg3 {background-color: rgba(95,158,160,.3); }
-.bg4 {background-color: rgba(255,255,255,.7); }
-.p1 { font-size:1.3rem; }
-.noMarginB { margin-bottom:0; }
-/* ---------end Table.html--------- */
-
-
-/*  Documentation | Language Markup Styles
-===========================================*/
-      pre > code {
-          padding: 1rem;
-          margin: 0;
-
-      }
-        code {
-            padding: 0;
-            margin: 0;
-
-            font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
-            font-size: .7rem;
-            background-color: #ccc;
-            overflow: auto;
-            word-wrap: break-word;
-      }
-
-        pre {
-            padding: 0;
-            margin:0;
-
-            background-color: transparent;
-            color: #020202;
-            border: 1px solid #fff;
-            white-space: pre-wrap;
-            white-space: -moz-pre-wrap;
-            white-space: -o-pre-wrap;
-            word-wrap: break-word; }
-
-        .languageMarkup { }
-
-        .plumage {
-            color: blue;
+body, h1, h3, h5, footer { font-family: 'Shadows Into Light', Verdana, sans-serif; }
+        footer { color:#000; background-color:#a6d8d8; height:9vh;}
+        header>p { text-align: center; font-family: 'Shadows Into Light', Verdana, sans-serif; }
+         .parallax { background:url(images/woodsOnoW.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        color:#fff; }
+        .bg10 { background-color:#e2ecee;}
+        .bg11 { background-color: #c4dade;}
+        .bg12 {  background-color:rgba(46, 145, 163, 0.55); }
+        .flex-caption { background-color:#2e91a3; }
+        .navbar { background-color: #a6d8d8; height:auto;  }
+        .nav-menu a { color:#000; }
+        .noMargin { margin:0; font-size:1.5rem; }
+        .noMarginB { margin-bottom:0; }
+        @media screen and (min-width:400px) {
+            .noMargin { margin:0; font-size:2.5rem; }
         }
-        .plumageClass {
-            color: darkred;
+        @media screen and (min-width:600px) {
+            p, li { font-size:1.5em; }
+            .marginTop {margin-top:6rem; font-size: 2.5rem;}
+            .noMargin { margin:0; font-size:3.5rem; }
         }
-        .keyTag {
-            color: darkgreen;
-        }
-
-
-
 
 
 
