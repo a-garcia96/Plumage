@@ -1088,11 +1088,19 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem; }
 
 /* ---------------------------------- jQUERY DIALOG ----------------------------------------- */
 
-/* Custom Styling  */
-    #boxDialog1, #boxDialog2, #boxDialog3, #boxDialog4, #boxDialog5, #boxDialog6, #boxDialog7, #boxDialog8, #boxDialog9    , #boxDialog9 {
-                display: none;
-                color: #000;
-                background-color: #ccc; }
+
+/*
+[id^="boxDialog"] {
+    display: none;
+    color: red;
+    background-color: green;
+}
+*/
+
+[id^="boxDialog"] p {
+    padding-left: 1rem;
+    padding-right: 1rem; 
+}
 
 /*  jQuery UI Overriding */
     .ui-widget-overlay {
