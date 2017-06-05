@@ -2,6 +2,13 @@
   background-color: #009688;
 }
 
+.navbar-brand a{
+  color: #fff;
+}
+.nav-menu a{
+  color: #fff;
+}
+
 .billboard{
   background: url(../images/hero.jpg) center left/cover;
 }
@@ -29,18 +36,18 @@ footer{
         code {
             padding: 0;
             margin: 0;
-            
+
             font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
-            font-size: .7rem; 
+            font-size: .7rem;
             background-color: #ccc;
             overflow: auto;
-            word-wrap: break-word; 
+            word-wrap: break-word;
       }
-        
+
         pre {
             padding: 0;
             margin:0;
-            
+
             background-color: transparent;
             color: #020202;
             border: 1px solid #fff;
@@ -48,9 +55,9 @@ footer{
             white-space: -moz-pre-wrap;
             white-space: -o-pre-wrap;
             word-wrap: break-word; }
-        
+
         .languageMarkup { }
-        
+
         .plumage {
             color: blue;
         }

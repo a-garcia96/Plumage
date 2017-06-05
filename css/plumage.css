@@ -724,7 +724,7 @@ input[type="number"]:focus {
 .input-number-wrapper {
     position: relative;
       }
-      
+
 .input-number-wrapper:after {
     content: "\25B2";
     pointer-events: none;
@@ -752,16 +752,16 @@ input[type="number"]:focus {
     margin-left: -20px;
     margin-bottom: 5px;
     font-size: 16px; }
-      
+
 input[type=number]::-webkit-inner-spin-button {
     opacity: 0;
     font-size: 100px; }
-      
+
 input[type=number]::inner-spin-button {
     opacity: 0;
-    font-size: 100px;       
+    font-size: 100px;
       }
-      
+
 /* Firefox: Removed span style and input controls */
 @-moz-document url-prefix() {
     .input-number-wrapper:after {
@@ -771,7 +771,7 @@ input[type=number]::inner-spin-button {
 }
 input[type=number] {
     -moz-appearance: textfield; }
-      
+
 input[type="number"] {
     width: 70px;
     min-width: 70px;
@@ -1006,6 +1006,7 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem; }
   padding-left: 20px;
   font-weight: 300;
   font-size: 2em;
+  font-weight: 400;
   width: 100px;
   display: inline-block;
 }
@@ -1092,8 +1093,8 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem; }
     display: block;
     color: #333;
   }
-  .nav-menu a:visited { color: #000; }
-  .nav-menu a:hover { color: #81C784; }
+  .nav-menu a:visited { color: #fff; }
+  .nav-menu a:hover { color: #333; }
 }
 
 /* ---------------- BILLBOARD --------------------- */
@@ -1132,7 +1133,7 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem; }
                 display: none;
                 color: #000;
                 background-color: #ccc; }
-                
+
 /*  jQuery UI Overriding */
     .ui-widget-overlay {
                 opacity: 0.9;
