@@ -60,7 +60,7 @@
 /*Creates row for columns to be centered within and not overflow*/
 
 .row {
-  padding: 15px;
+  padding: 10px 15px 20px 15px;
   width: 100%;
   min-height: 1px;
   float: left;
@@ -184,7 +184,7 @@ footer{
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto Slab', serif;
   margin-top: .75rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-weight: 500;
 }
 
@@ -247,7 +247,7 @@ figcaption, figure, main { display: block; }
 /* Style for Code ----------------------------------------*/
 
 code {
-  background: #d3d3d3;
+  background: #FAFAFA;
   border-radius: .4rem;
   font-size: .85rem;
   margin: 0 .2rem;
@@ -256,7 +256,7 @@ code {
 }
 
 pre {
-  background: #d3d3d3;
+  background: #FAFAFA;
   border-left: 0.3rem solid #a9a9a9;
   padding: .3rem 0 .3rem .8rem;
   overflow-y: hidden;
@@ -855,7 +855,7 @@ button, .button { padding: .4rem; }
 
 input, textarea, select, fieldset { padding: 1rem; }
 
-pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem; }
+pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem 0; }
 
 /* ------------------------UTILITY CLASSES------------------------- */
 
@@ -906,9 +906,7 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem; }
   p { page-break-inside: avoid; }
 }
 
-/* ------------------------NAVBAR-------------------------
-
-/*.navbar is currently being used for header tag. class name will change to better reflect its purpose*/
+/* ------------------------NAVIGATION-------------------------*/
 
 .navbar {
   background-color: #ffffff;
@@ -1055,6 +1053,19 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem; }
   }
   .nav-menu a:visited { color: #fff; }
   .nav-menu a:hover { color: #333; }
+
+  .side-nav{
+    position: fixed;
+    font-size: 1.2rem;
+  }
+
+  .side-nav ul{
+    padding-left: 40px;
+  }
+
+  .side-nav a:hover{
+    color: #009688;
+  }
 }
 
 /* ---------------- BILLBOARD --------------------- */

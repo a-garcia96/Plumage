@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,8 @@
   <link rel="icon" href="../images/logo.png">
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/jquery-ui.css" type="text/css" />
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
-  <script src="../js/jquery-ui.min.js" type="text/javascript"></script>    
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="../js/jquery-ui.min.js" type="text/javascript"></script>
   <link rel="stylesheet" href="../css/plumage.css">
   <link rel="stylesheet" href="../css/main.css">
 </head>
@@ -27,7 +26,7 @@
           <li><a href="#">Get Started</a></li>
           <li><a href="#">CSS</a></li>
           <li><a href="#">Components</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
       </nav>
       <nav class="nav-menu">
@@ -35,100 +34,152 @@
           <li><a href="#">Get Started</a></li>
           <li><a href="#">CSS</a></li>
           <li><a href="#">Components</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  
-<main class="container-lg">
-<div class="row">
-<div class="col-md-12">
-   
-    <h1>Get Started</h1>
-        <button><a href="#">Download Plumage</a></button>
-    
-    <p>On this page you get a quick and super simple guide to help you how to set up your PLumage.io and start building fancy websites. By clicking in the button bellow you are going to download the entire Plumage folder, which is a ziped file. Once you extract it, you will get a structure that should look like that:</p>
-    
-    <pre style="max-width:400px;"><code>
-Plumage
-│
-├── css
-│   │
-│   ├── icons
-│   ├── plumage.css
-│   ├── plumage.css.map
-│   └── plumage.min.css
-│   
-├── js
-│   │
-│   ├── plumage.js
-│   └── plumage.min.js
-│
-└── icons
+
+  <main class="container-lg">
+    <div class="row">
+      <div class="col-md-8">
+        <section class="row" id="download">
+          <h1>Get Started</h1>
+          <p>First, download the plumage framework from the button below.</p>
+          <button class="button-sm"><a href="#">Download Plumage</a></button>
+        </section>
+        <section class="row" id="files">
+          <h1>File Structure</h1>
+          <p>On this page you get a quick and super simple guide to help you how to set up your PLumage.io and start building fancy websites. By clicking in the button bellow you are going to download the entire Plumage folder, which is a ziped file. Once
+            you extract it, you will get a structure that should look like that:</p>
+
+          <pre><code>
+    Plumage
     │
-    ├── arrows
-    ├── communication
-    ├── core
-    ├── location
-    ├── logos
-    ├── media-controls
-    ├── photo-and-video
-    └── wather
-    </pre></code>
-    
-    <h4>Setting up a HTML file</h4>
-    
-    <p>Once you get everything in your local driver, go ahead and open our index.html, which is a starting file that we provide to make it easier to start to have some fun!</p>
-    
-    <p>Our index.html has already all links that conect your source code to the styling files and scripts. So all you have to do is include your content and pick up the styling options provided by Plumage framework.</p>
-    
-    <h5>The &lt;head&gt; tag</h5>
-    
-    <p>WARNING: Please make sure you are setting the path of those files properly. If you include or remove your HTML file to a different folder, you need fix <these></these> paths.</p>
-    
-    <pre><code>
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
-    
-    &lt;title>Your Page's Name&lt;/title&gt;
-    
-    <em style="color:#666;">&lt;!--Loading your own Favicon (logo not provided) --&gt;</em>    
-    &lt;link rel="icon" href="../images/logo.png"&gt;
-    
-    <em style="color:#666;">&lt;!--Loading the Reset --&gt;</em>
-    &lt;link rel="stylesheet" href="../css/reset.css"&gt;
-    
-    &lt;link rel="stylesheet" href="../css/jquery-ui.css" type="text/css" /&gt;
+    ├── css
+    │   │
+    │   ├── icons
+    │   ├── plumage.css
+    │   ├── plumage.css.map
+    │   └── plumage.min.css
+    │
+    ├── js
+    │   │
+    │   ├── plumage.js
+    │   └── plumage.min.js
+      </pre></code>
+        </section>
 
-    <em style="color:#666;">&lt;!--Loading jQuery CDN --&gt;</em>    
-    &lt;script src="https://code.jquery.com/jquery-2.2.4.min.js"integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="crossorigin="anonymous"&gt;&lt;/script&gt;
+        <section class="row" id="setup">
+          <h1>Setting up your head tag</h1>
+          <p>Once you get everything in your local driver, go ahead and open our index.html, which is a starting file that we provide to make it easier to start to have some fun!</p>
 
-    <em style="color:#666;">&lt;!--Loading jQuery UI --&gt;</em>
-    &lt;script src="../js/jquery-ui.min.js" type="text/javascript"&gt;&lt;/script&gt;    
-    
-    <em style="color:#666;">&lt;!--Loading Plumage CSS --&gt;</em>
-    &lt;link rel="stylesheet" href="../css/plumage.css"&gt;
-    
-    <em style="color:#666;">&lt;!--Loading a custom CSS style --&gt;</em>
-    &lt;link rel="stylesheet" href="../css/main.css"&gt;
-    </code></pre>
-      
-    <div>
-    <h5>Boom!</h5>
-    <p>That's pretty much it! You are ready to start including your content. But first make sure you understand how Plumage's classes and the key tags covered are configurated, in order to make you get all the powerfull resources from this friendly and nice framework.Have fun!</p>
+          <p>Our index.html has already all links that conect your source code to the styling files and scripts. So all you have to do is include your content and pick up the styling options provided by Plumage framework.</p>
+
+          <h5>The &lt;head&gt; tag</h5>
+
+          <p>WARNING: Please make sure you are setting the path of those files properly. If you include or remove your HTML file to a different folder, you need fix
+            <these></these> paths.</p>
+
+          <pre><code>
+      &lt;meta charset="UTF-8"&gt;
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+      &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+
+      &lt;title>Your Page's Name&lt;/title&gt;
+
+      <em style="color:#666;">&lt;!--Loading your own Favicon (logo not provided) --&gt;</em>
+      &lt;link rel="icon" href="../images/logo.png"&gt;
+
+      <em style="color:#666;">&lt;!--Loading the Reset --&gt;</em>
+      &lt;link rel="stylesheet" href="../css/reset.css"&gt;
+
+      &lt;link rel="stylesheet" href="../css/jquery-ui.css" type="text/css" /&gt;
+
+      <em style="color:#666;">&lt;!--Loading jQuery CDN --&gt;</em>
+      &lt;script src="https://code.jquery.com/jquery-2.2.4.min.js"integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="crossorigin="anonymous"&gt;&lt;/script&gt;
+
+      <em style="color:#666;">&lt;!--Loading jQuery UI --&gt;</em>
+      &lt;script src="../js/jquery-ui.min.js" type="text/javascript"&gt;&lt;/script&gt;
+
+      <em style="color:#666;">&lt;!--Loading Plumage CSS --&gt;</em>
+      &lt;link rel="stylesheet" href="../css/plumage.css"&gt;
+
+      <em style="color:#666;">&lt;!--Loading a custom CSS style --&gt;</em>
+      &lt;link rel="stylesheet" href="../css/main.css"&gt;
+      </code></pre>
+        </section>
+        <section class="row" id="template">
+          <h1>HTML Template</h1>
+          <p>Want to get up and running quickly? Use the template html file provided in the folder or feel free to copy this code.</p>
+          <pre><code>
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <meta http-equiv="X-UA-Compatible" content="ie=edge">
+              <title>Plumage | Modern.Beautiful.Simple | A CSS framework</title>
+              <link rel="icon" href="images/logo.png">
+              <link rel="stylesheet" href="css/reset.css">
+              <link rel="stylesheet" href="css/plumage.css">
+              <link rel="stylesheet" href="css/main.css">
+            </head>
+            <body>
+              <header class="navbar">
+                <div class="container-lg">
+                  <img src="images/logo.png" alt="logo" class="navbar-logo">
+                  <h1 class="navbar-brand"><a href="index.html">Plumage</a></h1>
+                  <!-- MENU BUTTON MUST GO HERE TO ENSURE FUNCTIONALITY -->
+                  <div class="navbar-menu-icon"></div>
+                  <!-- MOBILE NAV MUST GO BEFORE DESKTOP NAV IN ORDER TO FUNCTION PROPERLY -->
+                  <nav class="nav-mobile-menu">
+                    <ul>
+                      <li><a href="#">Get Started</a></li>
+                      <li><a href="#">CSS</a></li>
+                      <li><a href="#">Components</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                    </ul>
+                  </nav>
+                  <nav class="nav-menu">
+                    <ul>
+                      <li><a href="#">Get Started</a></li>
+                      <li><a href="#">CSS</a></li>
+                      <li><a href="#">Components</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </header>
+          </pre></code>
+        </section>
+
+        <div>
+          <h5>Boom!</h5>
+          <p>That's pretty much it! You are ready to start including your content. But first make sure you understand how Plumage's classes and the key tags covered are configurated, in order to make you get all the powerfull resources from this friendly
+            and nice framework.Have fun!</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <nav class="side-nav">
+          <ul>
+            <li><a href="#download">Download</a></li>
+            <li><a href="#files">File Structure</a></li>
+            <li><a href="#setup">Setting Up</a></li>
+            <li><a href="#template">HTML Template</a></li>
+            <li><a href="#examples">Examples</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-       
-</div>
-</div>
-</main>
- 
+  </main>
+
   <footer>
     <h1>Footer goes here</h1>
   </footer>
-<script type="text/javascript" src="../js/navbar.js"></script>
-<script type="text/javascript" src="../js/dialog.js"></script>
+  <script type="text/javascript" src="../js/navbar.js"></script>
+  <script type="text/javascript" src="../js/dialog.js"></script>
 
 </body>
+
 </html>
