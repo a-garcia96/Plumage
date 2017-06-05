@@ -149,34 +149,10 @@
 
 /* ------------------------ICONS-------------------------------*/
 
-/*@font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
-  src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'), url(https://example.com/MaterialIcons-Regular.woff) format('woff'), url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
-}
-
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-}*/
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
 
 /* ------------------------BASE STYLES------------------------- */
 
@@ -461,22 +437,6 @@ input[type="submit"], input[type="reset"], input[type="button"] {
   box-sizing: border-box;
   box-shadow: 3px 3px 5px #ccc;
   margin: 2em 0;
-}
-
-.button, button {
-  background-color: rgba(204, 204, 204, .45);
-  line-height: 1.7;
-  padding: .5em;
-  font-weight: 300;
-  font-size: 1.2rem;
-  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
-  margin-left: 0;
-}
-
-.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, .button:focus, button:focus, input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus {
-  color: #999;
-  background-color: rgba(145, 232, 66, 1);
-  outline: 0;
 }
 
 input[type="email"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, input[type="number"] {
