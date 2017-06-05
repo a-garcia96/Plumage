@@ -1125,6 +1125,37 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem; }
   .billboard h1 { padding: 10% 0 0 0; font-size: 10rem;}
 }
 
+/* ---------------------------------- jQUERY DIALOG ----------------------------------------- */
+
+/* Custom Styling  */
+    #boxDialog1, #boxDialog2, #boxDialog3, #boxDialog4, #boxDialog5, #boxDialog6, #boxDialog7, #boxDialog8, #boxDialog9    , #boxDialog9 {
+                display: none;
+                color: #000;
+                background-color: #ccc; }
+                
+/*  jQuery UI Overriding */
+    .ui-widget-overlay {
+                opacity: 0.9;
+                background-color: black; }
+    .ui-corner-all {
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+            border-top-right-radius: 0px;
+            border-top-left-radius: 0px; }
+        .ui-widget.ui-widget-content {
+            border:none;
+            background: #ccc; }
+        .ui-widget {
+            font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif; }
+        .ui-dialog .ui-dialog-title {
+            border:none; }
+        .ui-dialog .ui-dialog-content {
+            padding: 0 0 0.5em 0; }
+        .ui-dialog {
+            padding: 0; }
+        button[type="button"] {
+            box-shadow: none; }
+
 /* ---------------------------------- FLEX SLIDER ----------------------------------------- */
 /*
  * jQuery FlexSlider v2.6.3
