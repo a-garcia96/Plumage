@@ -36,10 +36,8 @@ footer{
         code {
             padding: 0;
             margin: 0;
-
             font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
             font-size: .7rem;
-            background-color: #ccc;
             overflow: auto;
             word-wrap: break-word;
       }
@@ -47,16 +45,12 @@ footer{
         pre {
             padding: 0;
             margin:0;
-
             background-color: transparent;
-            color: #020202;
-            border: 1px solid #fff;
             white-space: pre-wrap;
             white-space: -moz-pre-wrap;
             white-space: -o-pre-wrap;
-            word-wrap: break-word; }
-
-        .languageMarkup { }
+            word-wrap: break-word;
+          }
 
         .plumage {
             color: blue;
