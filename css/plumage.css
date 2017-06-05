@@ -1082,7 +1082,7 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem 0; }
 
 .billboard h1 {
   padding: 15% 5%;
-  font-size: 4.5rem;
+  font-size: 1.5em;
   margin: 0;
   font-weight: 100;
 }
@@ -1090,11 +1090,7 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem 0; }
 .tagline { font-size: 2rem; }
 
 .billboard h3{ margin-top: 10%; }
-/* ------------------------ ANYTHING LARGER THAN MOBILE SCREEN SIZES ------------------------- */
 
-@media screen and (min-width: 450px) {
-  .billboard h1 { padding: 10% 0 0 0; font-size: 7rem;}
-}
 /* ------------------------ ANYTHING LARGER THAN TABLET SCREEN SIZES ------------------------- */
 
 @media screen and (min-width: 992px) {
