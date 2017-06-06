@@ -17,7 +17,13 @@
            <p class="p1">Using regular HTML, Plumage gives you responsive tables that look great on any size screen.</p>
        </div>
         <div class="col-md-10 col-lg-8 col-xl-6">
-         <h2 class="no-margin-bottom">Basic</h2> 
+         <h2 class="no-margin-bottom">Basic</h2>
+         <h5 class="plumageClass no-margin-bottom">For thead change on Mobile screen:</h5> 
+         <ol>It is <span class="plumageClass">IMPORTANT to note:</span>
+             <li class="indent"> &#8226; the <span class="plumage">data-label</span> <strong>MUST</strong> be used on the &lt;td&gt;.</li>
+              <li class="indent">&#8226;  the &lt;td&gt; <span class="plumage">data-label</span> information <strong>MUST</strong> match the information in the corresponding &lt;th&gt;. </li>
+        </ol>
+
           <h5 class="no-margin-bottom">HTML</h5>
            <pre><code>
 &lt;div class="col-md-12"&gt;
@@ -32,19 +38,19 @@
         &lt;/thead &gt;
         &lt;tbody&gt;
             &lt;tr&gt;
-                &lt;td data-label="First Name">&gt;Alex&lt;/td&gt;
-                &lt;td data-label="Last Name">&gt;Smith&lt;/td&gt;
-                &lt;td data-label="Email">&gt;asmith@plumage&lt;/td&gt;
+                &lt;td <span class="plumage">data-label="First Name" </span>&gt;Alex&lt;/td&gt;
+                &lt;td <span class="plumage">data-label="Last Name"</span> >&gt;Smith&lt;/td&gt;
+                &lt;td <span class="plumage">data-label="Email"</span> >&gt;asmith@plumage&lt;/td&gt;
             &lt;/tr&gt;
             &lt;tr&gt;
-                &lt;td data-label="First Name">&gt;Natalia&lt;/td&gt;
-                &lt;td data-label="Last Name">&gt;Jones&lt;/td&gt;
-                &lt;td data-label="Email">&gt;njones@plumage&lt;/td&gt;
+                &lt;td <span class="plumage">data-label="First Name"</span>>&gt;Natalia&lt;/td&gt;
+                &lt;td <span class="plumage">data-label="Last Name"</span>>&gt;Jones&lt;/td&gt;
+                &lt;td <span class="plumage">data-label="Email"</span>&gt;njones@plumage&lt;/td&gt;
             &lt;/tr&gt;
             &lt;tr&gt;
-                &lt;td data-label="First Name">&gt;Paulo&lt;/td&gt;
-                &lt;td data-label="Last Name">&gt;Razil&lt;/td&gt;
-                &lt;td data-label="Email">&gt;prazil@plumage&lt;/td&gt;
+                &lt;td <span class="plumage">data-label="First Name"</span>>&gt;Paulo&lt;/td&gt;
+                &lt;td <span class="plumage">data-label="Last Name"</span>>&gt;Razil&lt;/td&gt;
+                &lt;td <span class="plumage">data-label="Email"</span>>&gt;prazil@plumage&lt;/td&gt;
             &lt;/tr&gt;
         &lt;/tbody&gt;
     &lt;/table&gt;
@@ -89,7 +95,7 @@
        </div>
        <div class="col-md-6">
            <h5 class="no-margin-bottom">HTML</h5>
-            <pre><code>&lt;table class="border"&gt;
+           <pre><code>&lt;table <span class="plumageClass">class="border" </span>&gt;
         &lt;thead&gt;. . . </code></pre>
        </div>
        <div class="col-sm-12">
@@ -101,7 +107,7 @@
                 <caption></caption>
                 <thead>
                     <tr>
-                        <th>Sea Creatures</th>
+                        <th>Sea  Creatures</th>
                         <th>Name</th>
                         <th>Lifespan</th>
                     </tr>
@@ -131,7 +137,7 @@
        </div>
         <div class="col-md-6">
            <h5 class="no-margin-bottom">HTML</h5>
-            <pre><code>&lt;table class="zebra"&gt;
+            <pre><code>&lt;table <span class="plumageClass"> class="zebra" </span>&gt;
         &lt;thead&gt;. . . </code></pre>
        </div>
        <div class="col-sm-12">
