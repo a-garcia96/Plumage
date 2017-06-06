@@ -440,7 +440,8 @@ input[type="submit"], input[type="reset"], input[type="button"] {
 }
 
 input[type="email"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, input[type="number"] {
-  min-width: 40%;
+  min-width: 50%;
+    max-width: 60%;
   font-size: 1.2em;
   color: #333;
   margin-bottom: 2em;
@@ -451,7 +452,27 @@ input[type="email"], input[type="search"], input[type="text"], input[type="tel"]
   box-shadow: none;
 }
 
-textarea { line-height: 1.5rem; min-width: 70%; max-width: 75%; }
+
+@media screen and (min-width: 670px) {
+input[title="First Name"], input[type="email"], input[type="tel"] {
+    min-width: 25%;
+    max-width: 30%;
+    margin-right: 3rem; }
+    
+input[title="Last Name"] {
+    min-width: 35%;
+    max-width: 45%;
+    
+    }
+    
+    
+    
+}
+
+
+
+
+textarea { min-width: 75%; max-width: 80%; }
 
 input[type="email"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, textarea:focus {
   border-bottom: 1px solid rgba(145, 232, 66, 1);
@@ -853,7 +874,7 @@ table.border td { border: 1px solid #ccc; }
 
 button, .button { padding: .4rem; }
 
-input, textarea, select, fieldset { padding: 1rem; }
+input, select, fieldset { padding: 1rem; }
 
 pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem 0; }
 
