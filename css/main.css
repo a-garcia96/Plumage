@@ -1,21 +1,15 @@
-.navbar{
-  background-color: #009688;
-}
+.navbar { background-color: #009688; }
 
-.navbar-brand a{
-  color: #fff;
-}
-.nav-menu a{
-  color: #fff;
-}
+.navbar-brand a { color: #fff; }
 
-.billboard{
-  background: url(../images/hero.jpg) center left/cover;
-}
+.nav-menu a { color: #fff; }
 
-footer{
-  background-color: #009688;
-}
+.billboard { background: url(../images/hero.jpg) center left/cover; }
+
+footer { background-color: #009688; }
+
+footer h1 { font-size: 2rem; }
+
 /* ---------for Table.html--------- */
 .bg1 {background-color: rgba(95,158,160,.1); }
 .bg2 {background-color: rgba(255,215,0,.1); }
