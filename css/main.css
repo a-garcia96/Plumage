@@ -20,10 +20,15 @@ ul li {
 .bg2 {background-color: rgba(255,215,0,.1); }
 .bg3 {background-color: rgba(95,158,160,.3); }
 .bg4 {background-color: rgba(255,255,255,.7); }
+
 .p1 { font-size:1.3rem; }
 .no-margin-bottom { margin-bottom:0; }
 /* ---------end Table.html--------- */
 
+/* ---------for Grid.html--------- */
+.bg13 {background-color:#999;}
+.ex-grid { margin:0 0 1.5rem 2rem; text-align: center;}
+/* ---------end Grid.html--------- */
 
 /*  Documentation | Language Markup Styles
 ===========================================*/

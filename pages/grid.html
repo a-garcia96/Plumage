@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Plumage | Grid</title>
+  <link rel="icon" href="../images/logo.png">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/jquery-ui.css" type="text/css" />
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="../js/jquery-ui.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="../css/plumage.css">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="container-lg">
+      <img src="../images/logo.png" alt="logo" class="navbar-logo">
+      <h1 class="navbar-brand"><a href="../index.html">Plumage</a></h1>
+      <div class="navbar-menu-icon"></div>
+      <nav class="nav-mobile-menu">
+        <ul>
+          <li><a href="#">Get Started</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">Components</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#">Get Started</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">Components</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container-lg">
+    <article class="row txt-center"><div class="col-sm-1 bg13">one</div><div class="col-sm-11 bg13 ex-grid">eleven</div></article>
+    <article class="row"><div class="col-sm-2">two</div><div class="col-sm-10">ten</div></article>
+    <article class="row"><div class="col-sm-3">three</div><div class="col-sm-9">nine</div></article>
+    <article class="row"><div class="col-sm-2">four</div><div class="col-sm-10">eight</div></article>
+    <article class="row"><div class="col-sm-3">five</div><div class="col-sm-9">seven</div></article>
+    <article class="row"><div class="col-sm-2">six</div><div class="col-sm-10">six</div></article>
+    <article class="row"><div class="col-sm-3">seven</div><div class="col-sm-9">five</div></article>
+    <article class="row"><div class="col-sm-2">eight</div><div class="col-sm-10">four</div></article>
+    <article class="row"><div class="col-sm-3">nine</div><div class="col-sm-9">three</div></article>
+    <article class="row"><div class="col-sm-2">ten</div><div class="col-sm-10">two</div></article>
+    <article class="row"><div class="col-sm-3">eleven</div><div class="col-sm-9">one</div></article>
+            
+    
+
+        <section class="row" id="setup">
+          <h1>Setting up your head tag</h1>
+          <p>Once you get everything in your local driver, go ahead and open our index.html, which is a starting file that we provide to make it easier to start to have some fun!</p>
+
+          <p>Our index.html has already all links that conect your source code to the styling files and scripts. So all you have to do is include your content and pick up the styling options provided by Plumage framework.</p>
+
+          <h5>The &lt;head&gt; tag</h5>
+
+          <p>WARNING: Please make sure you are setting the path of those files properly. If you include or remove your HTML file to a different folder, you need fix
+            <these></these> paths.</p>
+
+          <pre><code>
+      &lt;meta charset="UTF-8"&gt;
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+      &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+
+      &lt;title>Your Page's Name&lt;/title&gt;
+
+      <em style="color:#666;">&lt;!--Loading your own Favicon (logo not provided) --&gt;</em>
+      &lt;link rel="icon" href="../images/logo.png"&gt;
+
+      <em style="color:#666;">&lt;!--Loading the Reset --&gt;</em>
+      &lt;link rel="stylesheet" href="../css/reset.css"&gt;
+
+      &lt;link rel="stylesheet" href="../css/jquery-ui.css" type="text/css" /&gt;
+
+      <em style="color:#666;">&lt;!--Loading jQuery CDN --&gt;</em>
+      &lt;script src="https://code.jquery.com/jquery-2.2.4.min.js"integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="crossorigin="anonymous"&gt;&lt;/script&gt;
+
+      <em style="color:#666;">&lt;!--Loading jQuery UI --&gt;</em>
+      &lt;script src="../js/jquery-ui.min.js" type="text/javascript"&gt;&lt;/script&gt;
+
+      <em style="color:#666;">&lt;!--Loading Plumage CSS --&gt;</em>
+      &lt;link rel="stylesheet" href="../css/plumage.css"&gt;
+
+      <em style="color:#666;">&lt;!--Loading a custom CSS style --&gt;</em>
+      &lt;link rel="stylesheet" href="../css/main.css"&gt;
+      </code></pre>
+        </section>
+        <section class="row" id="template">
+          <h1>HTML Template</h1>
+          <p>Want to get up and running quickly? Use the template html file provided in the folder or feel free to copy this code.</p>
+          <pre><code>
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="en"&gt;
+        &lt;head&gt;
+          &lt;meta charset="UTF-8"&gt;
+          &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+          &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+          &lt;title&gt;Plumage | Modern.Beautiful.Simple | A CSS framework&lt;/title&gt;
+          &lt;link rel="icon" href="images/logo.png"&gt;
+          &lt;link rel="stylesheet" href="css/reset.css"&gt;
+          &lt;link rel="stylesheet" href="css/plumage.css"&gt;
+          &lt;link rel="stylesheet" href="css/main.css"&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+          &lt;header class="navbar"&gt;
+            &lt;div class="container-lg"&gt;
+              &lt;img src="images/logo.png" alt="logo" class="navbar-logo"&gt;
+              &lt;h1 class="navbar-brand">&lt;a href="index.html">Plumage&lt;/a&gt;&lt;/h1&gt;
+              &lt;!-- MENU BUTTON MUST GO HERE TO ENSURE FUNCTIONALITY -->
+              &lt;div class="navbar-menu-icon"&gt;&lt;/div&gt;
+              &lt;!-- MOBILE NAV MUST GO BEFORE DESKTOP NAV IN ORDER TO FUNCTION PROPERLY --&gt;
+              &lt;nav class="nav-mobile-menu"&gt;
+                &lt;ul&gt;
+                  &lt;li&gt;&lt;a href="#">Get Started&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="#">CSS&lt;/a&gt;&lt;/li>
+                  &lt;li&gt;&lt;a href="#">Components&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="#">Contact Us&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/nav&gt;
+              &lt;nav class="nav-menu">
+                &lt;ul&gt;
+                  &lt;li&gt;&lt;a href="#">Get Started&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="#">CSS&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="#">Components&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="#">Contact Us&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/nav&gt;
+            &lt;/div&gt;
+          &lt;/header&gt;
+          &lt;h1&gt;Hello World!&lt;/h1&gt;
+        &lt;/body&gt;
+      &lt;/html&gt;
+
+          </code></pre>
+        </section>
+        <section class="row" id="examples">
+          <h1>As simple as that!</h1>
+          <p>That's pretty much it! You're now ready to start including your content, but first make sure you understand how Plumage uses its html tags and classes to style your website. Have fun!</p>
+          <a href="css.html" class="button">Documentation</a>
+          <h3>Need more examples? Have a look!</h3>
+        </section>
+        <section class="row">
+              <div class="col-sm-12 txt-center">
+                <h3>Website goes here</h3>
+              </div>
+              <div class="col-sm-12 txt-center">
+                <h3>Website goes here</h3>
+              </div>
+              <div class="col-sm-12 txt-center">
+                <h3 class="no-margin-bottom">Special Day Photography</h3>
+                <p>Small business site for Photographer</p>
+                <p><a href="example-websites/wedding-photograpy/index.html" ><img src="../images/photography.png" alt="special day photography index page"></a></p>
+              </div>
+              <div class="col-sm-12 txt-center">
+                <h3>Website goes here</h3>
+              </div>
+    </section>
+      </div>
+      <div class="col-md-4">
+        <nav class="side-nav">
+          <ul>
+            <li><a href="#download">Download</a></li>
+            <li><a href="#files">File Structure</a></li>
+            <li><a href="#setup">Setting Up</a></li>
+            <li><a href="#template">HTML Template</a></li>
+            <li><a href="#examples">Examples</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container-lg">
+      <h1>Footer goes here</h1>
+    </div>
+  </footer>
+  <script type="text/javascript" src="../js/navbar.js"></script>
+  <script type="text/javascript" src="../js/dialog.js"></script>
+
+</body>
+
+</html>
