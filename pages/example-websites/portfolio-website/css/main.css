@@ -1,3 +1,7 @@
+p{
+  font-size: 1.5rem;
+}
+
 .nav-menu{
   float: none;
   text-align: center;
@@ -49,4 +53,40 @@
   top: -20px;
   left: 46%;
   box-shadow: 0 0 4px 0 #000;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-menu{
+    display: block
+  }
+
+  .nav-menu ul{
+    padding-top: 10px;
+  }
+
+  .nav-menu li{
+    display: inline-block;
+  }
+
+  .nav-menu a{
+    margin: 0 10px;
+  }
+
+  .fa-code{
+    font-size: 35px;
+    margin: 0 10px;
+  }
+
+  .billboard h1{
+    padding: 20% 5% 0 5%;
+    font-size: 3rem;
+  }
+
+  .billboard .fa{
+    font-size: 30px;
+  }
+
+  .profile-photo{
+    left: 26%;
+  }
 }
