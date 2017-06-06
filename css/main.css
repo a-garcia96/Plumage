@@ -11,7 +11,8 @@ footer { background-color: #009688; }
 footer h6 {
     text-align: center;
 }
-ul li {
+
+ul b em li {
     display:inline;
 }
 

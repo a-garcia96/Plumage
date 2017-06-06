@@ -1103,7 +1103,11 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem 0; }
   .side-nav a:hover{
     color: #009688;
   }
-}
+    .side-nav a:active{
+    color: #009688;
+    border-bottom: 3px solid #009688;
+  }
+
 
 /* ---------------- BILLBOARD --------------------- */
 
