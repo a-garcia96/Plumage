@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <style type="text/css">
+        html {
+  font-size: 1rem; }
+body {
+   font-size: 1em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-size: 1em;
+  color: #222;
+   }
+    blockquote{background:#f9f9f9;border-left:1em solid #eee;margin:1.5em 1em;padding:.5em 1em;quotes:"\201C""\201D";}
+       blockquote :first-child{display:inline;}
+       blockquote :last-child{margin-bottom:0;}
+        button .material-icons{
+            
+            font-size: inherit;
+            line-height: inherit;
+        }
+         .button-xs{
+           font-size: 50%;
+             line-height: 1.5rem;
+        }
+        .button-crcl-xs{
+            padding: 0;
+           font-size: 1rem;
+            border-radius: 50%;
+            width: 2rem;
+            height: 2rem;
+           text-align: center;
+            line-height: inherit;
+            overflow: hidden;
+        }
+        .button-crcl-sm{
+            padding: 0;
+           font-size: 1.25rem;
+            border-radius: 50%;
+            width: 3rem;
+            height: 3rem;
+           text-align: center;
+            line-height: inherit;
+            overflow: hidden;
+        }
+        .button-crcl-md{
+            padding: 0;
+           font-size: 1.5rem;
+            border-radius: 50%;
+            width: 4rem;
+            height: 4rem;
+           text-align: center;
+            line-height: inherit;
+            overflow: hidden;
+        }
+        .button-crcl-lg{
+            padding: 0;
+           font-size: 2rem;
+            border-radius: 50%;
+            width: 5rem;
+            height: 5rem;
+           text-align: center;
+            line-height: inherit;
+            overflow: hidden;
+        }
+        .button-sm{
+            font-size: 75%;
+            line-height: 1.85rem;
+        }
+        .button-lg{
+            font-size: 125%;
+            line-height: 3rem;
+        }
+        .button-round{
+            border-radius: 50%;
+        }
+        .button-block{
+            display: block;
+            width: 100%;
+        }
+        
+.button,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+    margin: 0.2rem;
+  background-color: lightblue;
+  border: 0.1rem solid lightblue;
+  border-radius: .4rem;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 300;
+  
+  letter-spacing: .1rem;
+  line-height: 2.3rem;
+  padding:0 1rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+} 
+       
+        .button:focus, .button:hover,
+button:focus,
+button:hover,
+input[type='button']:focus,
+input[type='button']:hover,
+input[type='reset']:focus,
+input[type='reset']:hover,
+input[type='submit']:focus,
+input[type='submit']:hover {
+  background-color: cadetblue;
+  border-color: cadetblue;
+  color: #fff;
+  outline: 0;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+        .button[disabled],
+button[disabled],
+input[type='button'][disabled],
+input[type='reset'][disabled],
+input[type='submit'][disabled] {
+  cursor: default;
+  opacity: .5;
+}
+        .button[disabled]:focus, .button[disabled]:hover,
+button[disabled]:focus,
+button[disabled]:hover,
+input[type='button'][disabled]:focus,
+input[type='button'][disabled]:hover,
+input[type='reset'][disabled]:focus,
+input[type='reset'][disabled]:hover,
+input[type='submit'][disabled]:focus,
+input[type='submit'][disabled]:hover {
+  background-color: lightblue;
+  border-color: lightblue;
+  
+}
+        
+/* botton outline*/
+        .button.button-outline,
+button.button-outline,
+input[type='button'].button-outline,
+input[type='reset'].button-outline,
+input[type='submit'].button-outline {
+  background-color: transparent;
+  color: lightblue;
+}
+
+.button.button-outline:focus, .button.button-outline:hover,
+button.button-outline:focus,
+button.button-outline:hover,
+input[type='button'].button-outline:focus,
+input[type='button'].button-outline:hover,
+input[type='reset'].button-outline:focus,
+input[type='reset'].button-outline:hover,
+input[type='submit'].button-outline:focus,
+input[type='submit'].button-outline:hover {
+  background-color: transparent;
+  border-color: cadetblue;
+  color: cadetblue;
+}
+
+.button.button-outline[disabled]:focus, .button.button-outline[disabled]:hover,
+button.button-outline[disabled]:focus,
+button.button-outline[disabled]:hover,
+input[type='button'].button-outline[disabled]:focus,
+input[type='button'].button-outline[disabled]:hover,
+input[type='reset'].button-outline[disabled]:focus,
+input[type='reset'].button-outline[disabled]:hover,
+input[type='submit'].button-outline[disabled]:focus,
+input[type='submit'].button-outline[disabled]:hover {
+  border-color: inherit;
+  color: lightblue;
+     
+}
+.button.button-clear:focus, .button.button-clear:hover,
+button.button-clear:focus,
+button.button-clear:hover,
+input[type='button'].button-clear:focus,
+input[type='button'].button-clear:hover,
+input[type='reset'].button-clear:focus,
+input[type='reset'].button-clear:hover,
+input[type='submit'].button-clear:focus,
+input[type='submit'].button-clear:hover {
+  background-color: transparent;
+  border-color: transparent;
+  color: cadetblue;
+}
+
+.button.button-clear[disabled]:focus, .button.button-clear[disabled]:hover,
+button.button-clear[disabled]:focus,
+button.button-clear[disabled]:hover,
+input[type='button'].button-clear[disabled]:focus,
+input[type='button'].button-clear[disabled]:hover,
+input[type='reset'].button-clear[disabled]:focus,
+input[type='reset'].button-clear[disabled]:hover,
+input[type='submit'].button-clear[disabled]:focus,
+input[type='submit'].button-clear[disabled]:hover {
+  color: lightblue;
+}  
+       
+       code {
+  background: lightgray;
+  border-radius: .4rem;
+  font-size: .85rem;
+  margin: 0 .2rem;
+  padding: .2rem .5rem;
+  white-space: nowrap;
+} 
+        pre {
+  background: lightgray;
+  border-left: 0.3rem solid darkgray;
+            padding: .3rem 0 .3rem .8rem;
+  overflow-y: hidden;
+}
+        pre > code {
+  border-radius: 0;
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre;
+}
+   p {
+  margin-top: 0; }
+        a {
+  color: darkgray;
+  text-decoration: none;
+}
+
+a:focus, a:hover {
+color: lightgray;
+}
+dl,ol,ul {
+  list-style: none;
+  margin-top: 0;
+  padding-left: 0;
+}
+    ul {
+  list-style: square inside none;
+}
+        ol{
+    list-style: upper-roman inside none;
+}
+        ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%; }
+button,
+.button {
+  margin: .4rem; }
+input,
+textarea,
+select,
+fieldset {
+  margin: 1.2rem; }
+pre,
+blockquote,
+dl,
+figure,
+table,
+p,
+ul,
+ol,
+form {
+  margin: 1rem; }
+        sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  color: lightgray;
+} 
+
+
+
+
+    </style>
+</head>
+<body>
+    <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing <sup>elit</sup>. Hic unde quis tenetur incidunt nulla eos consequuntur fugit! In pariatur accusantium, animi, <sub>eaque</sub> ipsa omnis esse, libero unde eos consequuntur quo.</blockquote>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fugit rem aperiam. Quos quo, unde eius corporis, consectetur eaque sequi, soluta ut dolor dolore similique obcaecati a recusandae dolores ipsam!</p>
+    <a href="#">This is link</a>
+    <a href="#">This is link2</a>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam hic ad beatae nihil ut pariatur modi blanditiis omnis inventore molestias a repudiandae dolor est quaerat alias natus, nobis quidem enim.</p>
+    <button> hi there</button>
+    <button type="button" disabled class="button-crcl-xs"> <i class="material-icons">face</i></button>
+     <button type="button" disabled class="button-crcl-sm"> <i class="material-icons">face</i></button>
+      <button type="button" disabled class="button-crcl-md"> <i class="material-icons">face</i></button>
+       <button type="button" disabled class="button-crcl-lg"> <i class="material-icons">face</i></button>
+    <button type="submit" class="button-xs"> hi</button>
+     <button type="submit" class="button-sm"> hi</button>
+      <button type="submit" class=""> hi</button>
+    <button type="submit" class="button-outline button-lg"> hi </button>
+    <button type="submit" class="button-outline button-round" disabled> hi there</button>
+    
+     <button type="submit" class="button-clear" disabled> hi there</button>
+          <button type="submit" class="button-clear"> hi there</button>
+          <button type="submit" class="button-block"> hi</button>
+          
+          <code> some code</code>
+          <pre>Lorem ipsum dolor sit amet, 
+          consectetur adipisicing elit.     Voluptas sint magnam officia commodi,  
+          ttttt.</pre>
+          <pre><code>ggg 6677 * json ! $$</code></pre>
+          <p></p>
+          <dl>
+  <dt>Coffee</dt>
+  <dd>Black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>White cold drink</dd>
+</dl>
+<ol>
+    <li>red</li>
+    <li>red</li>
+    <li>red</li>
+    <li>red</li>
+    <li>red</li>
+</ol>
+<ul>
+    <li>red</li>
+    <li>red</li>
+    <li>red</li>
+    <li>red</li>
+    <li>red</li>
+</ul>
+</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
