@@ -1,0 +1,33 @@
+.nav-menu{
+  float: none;
+  text-align: center;
+}
+
+.nav-menu li{
+  vertical-align: super;
+}
+
+.nav-menu a{
+  color: #333;
+  margin: 0 20px;
+}
+
+.nav-menu a:visited{
+  color: #333;
+}
+
+.fa-code{
+  margin: 0 5px;
+}
+
+.billboard{
+  background-color: #558B2F;
+  height: 60vh;
+  text-shadow: none;
+  color: #333;
+}
+
+.billboard h1{
+  font-family: 'Roboto', serif;
+  font-size: 5rem;
+}
