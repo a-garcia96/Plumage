@@ -8,7 +8,10 @@
 
 footer { background-color: #009688; }
 
-footer h1 { font-size: 2rem; }
+footer h6 {
+    text-align: center;
+}
+
 
 /* ---------for Table.html--------- */
 .bg1 {background-color: rgba(95,158,160,.1); }
