@@ -1107,8 +1107,13 @@ div[id^="boxDialog"] p {
 div[id^="boxDialog"] {
     display: none;
     color: #000;
-    background-color: #ccc; ;
 }
+
+/* Testing this on the IMGs*/
+div[id^="boxDialog"] img {
+    width: 100%;
+}
+
 [class^="clickDialog"] {
     cursor:pointer;    
 }

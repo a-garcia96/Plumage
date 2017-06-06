@@ -6,6 +6,11 @@ url('https://fonts.googleapis.com/css?family=Delius+Unicase|Montserrat:400,700')
 body {
     font-family: 'Montserrat', sans-serif;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif; }
+
+.billboard h1 {
+    font-size: 3em; }
 
 .navbar {
     background-color: #d4fa45;
@@ -23,9 +28,18 @@ button, .button {
     border: 2px solid #fff;
     border-radius: 0;
 }
+button:hover, .button:hover {
+    color: #333;
+    background-color: #D4FA45;
+    border: 2px solid #333;
+    border-radius: 0;
+}
+
+
+
 .billboard{
   background: url(billboard.JPG) center center/cover;
-    height: 750px;
+    height: 500px;
 }
 .billboard h1, .billboard h2 {
     font-family: 'Montserrat', sans-serif;
@@ -45,25 +59,57 @@ footer p {
 }
 .dialogButtons ul li {
     display: inline;
-    text-align: center;
-    width: 500px;
-    
+    text-align: center;    
 }
 .dialogButtons ul {
     text-align: center;
 }
 
 .dialogButtons ul li img {
-    max-width: none;
-    width: 400px;
-    height: 400px;
-    margin: -3px;
-}
-@media screen and (min-width: 570px) {
-.dialogButtons ul li img {
-    max-width: none;
     width: 250px;
-    height: 250px; }
+    height: 250px;
+    box-shadow: 2px 2px 5px #333;
+    margin: 0 1px;
 }
 
+/*Overriding extra needs*/
+.navbar-brand {
+    margin-top: 15px;
+}
+
+/*  jQuery UI Overriding */
+.ui-widget-header {
+    border: 1px solid #dddddd;
+    background: #D4FA45;
+    color: #335A07;
+    font-weight: bold;
+}
+.ui-dialog .ui-dialog-content {
+    background: #335A07;
+    color: #D4FA45;
+}
+
+
+
+
+.ui-widget {
+    font-family: 'Montserrat', sans-serif; }
+
+
+
+@media screen and (min-width: 570px) {
+.billboard {
+    height: 750px;
+}
+  .billboard h1 { font-size: 6rem;}
+}
+
+.dialogButtons ul li img {
+    max-width: none;
+    width: 200px;
+    height: 200px;}
+}
+@media screen and (min-width: 992px) {
+  .billboard h1 { font-size: 10rem;}
+}
 
