@@ -412,7 +412,6 @@ legend {
   font-weight: 700;
   font-size: 1.2em;
 }
-
 label {
   display: block;
   font-size: 1.2em;
@@ -421,7 +420,6 @@ label {
   color: #333;
   margin-bottom: 0rem;
 }
-
 input[type="submit"], input[type="reset"], input[type="button"] {
   display: inline-block;
   height: 40px;
@@ -480,6 +478,27 @@ input[type="email"]:focus, input[type="search"]:focus, input[type="text"]:focus,
 }
 
 input[type="checkbox"], input[type="radio"] { display: inline-block; }
+
+@media screen and (min-width:600px) {
+    button[type='submit'] {
+        float: right;
+        margin: -4rem auto .5rem 0;
+    }
+
+}
+@media screen and (min-width:666px) {
+    button[type='submit'] {
+        margin: -4rem 20% .5rem 0;
+    }
+
+}
+@media screen and (min-width:990px) {
+    button[type='submit'] {
+        margin: -4rem auto .5rem 0;
+    }
+
+}
+
 
 /* R A D I O     B U T T O N S
 ======================================== */
