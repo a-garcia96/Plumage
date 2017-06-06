@@ -27,12 +27,12 @@ ul b em li {
 /* ---------end Table.html--------- */
 
 /* ---------for Grid.html--------- */
-.bg13 {background-color:#999;}
-.ex-grid { margin:0 0 1.5rem 2rem; text-align: center;}
+.bg13 {background-color:#ddd;  }
+.ex-grid { margin:0 0 0 2rem; text-align: center; }
 /* ---------end Grid.html--------- */
 
 /*  Documentation | Language Markup Styles
-===========================================*/
+===========================================*/ 
       pre > code {
           padding: 1rem;
           margin: 0;
