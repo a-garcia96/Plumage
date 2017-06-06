@@ -1152,7 +1152,6 @@ div[id^="boxDialog"] {
     color: #000;
 }
 
-/* Testing this on the IMGs*/
 div[id^="boxDialog"] img {
     width: 100%;
 }

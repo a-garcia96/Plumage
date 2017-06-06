@@ -11,7 +11,9 @@ footer { background-color: #009688; }
 footer h6 {
     text-align: center;
 }
-
+ul li {
+    display:inline;
+}
 
 /* ---------for Table.html--------- */
 .bg1 {background-color: rgba(95,158,160,.1); }
