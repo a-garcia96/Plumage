@@ -1,4 +1,4 @@
-/* The Blend |  Website Example 01 */
+/* The Blend Superfood Bar |  Website Example 01 */
 
 @import 
 url('https://fonts.googleapis.com/css?family=Delius+Unicase|Montserrat:400,700');
@@ -137,6 +137,7 @@ button, .button {
 
 @media screen and (min-width: 992px) {
   .billboard h1 { font-size: 10rem;}
+    
     
 .billboard button, .billboard.button {
     margin: 20px auto auto auto;
