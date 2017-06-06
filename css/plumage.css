@@ -1076,8 +1076,8 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem 0; }
 }
 
 .billboard h1 {
-  padding: 15% 5%;
-  font-size: 1.5em;
+  padding: 15% 5% 10%;
+  font-size: 4.5rem;
   margin: 0;
   font-weight: 100;
 }
@@ -1086,10 +1086,16 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem 0; }
 
 .billboard h3{ margin-top: 10%; }
 
+/* ------------------------ TABLET SCREEN SIZES ------------------------- */
+
+@media screen and (min-width: 600px) {
+  .billboard h1 { padding: 10% 0 2%;font-size: 7rem; }
+}
+
 /* ------------------------ ANYTHING LARGER THAN TABLET SCREEN SIZES ------------------------- */
 
 @media screen and (min-width: 992px) {
-  .billboard h1 { padding: 10% 0 0 0; font-size: 10rem;}
+  .billboard h1 { padding: 10% 0 4%; font-size: 10rem;}
 }
 
 /* ---------------------------------- jQUERY DIALOG ----------------------------------------- */
