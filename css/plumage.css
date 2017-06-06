@@ -249,7 +249,7 @@ figcaption, figure, main { display: block; }
 code {
   background: #FAFAFA;
   border-radius: .4rem;
-  font-size: .85rem;
+  font-size: .9rem;
   margin: 0 .2rem;
   padding: .2rem .5rem;
   white-space: nowrap;
@@ -843,7 +843,9 @@ ul { list-style: square inside none; }
 
 ol { list-style: upper-roman inside none; }
 
-ul ul, ul ol, ol ol, ol ul { margin: 1rem 0 1rem 2rem; font-size: 80%; }
+/*   Do we need this?
+
+ul ul, ul ol, ol ol, ol ul { margin: 1rem 0 1rem 2rem; font-size: 80%; } */
 
 /* ------------------------TABLES------------------------- */
 
