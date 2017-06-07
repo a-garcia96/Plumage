@@ -727,10 +727,9 @@ input[type="number"]:focus {
 
 .input-number-wrapper:after {
     content: "\25B2";
-    pointer-events: none;
+    pointer-events1: none;
     z-index: 20;
     cursor: default;
-
     padding: 0;
     position: absolute;
     color: #666;
@@ -741,7 +740,7 @@ input[type="number"]:focus {
 
 .input-number-wrapper:before {
     content: "\25BC";
-    pointer-events: none;
+    pointer-events1: none;
     z-index: 20;
     cursor: default;
     padding: 0;
