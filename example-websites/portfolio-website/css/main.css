@@ -15,6 +15,10 @@
   color: #333;
 }
 
+.nav-menu a:visited{
+  color: #333;
+}
+
 .fa-code{
   font-size: 30px;
   margin: 0 10px;
@@ -23,7 +27,9 @@
 .billboard{
   background-color: #558B2F;
   height: 60vh;
-  }
+  text-shadow: none;
+  color: #333;
+}
 
   .billboard h1{
     font-size: 3rem;
@@ -55,6 +61,16 @@
   box-shadow: 0 0 4px 0 #000;
 }
 
+.custom-js-icon{
+  font-size: 32px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.bring-up{
+  margin-top: -20px;
+}
+
 
 @media screen and (min-width: 375px){
   .profile-photo{
@@ -71,5 +87,21 @@
 @media screen and (min-width: 600px){
   .profile-photo{
     left: 38%;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .profile-photo{
+    left: 40%;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .profile-photo{
+    left: 45%;
+  }
+
+  .nav-menu{
+    float: none;
   }
 }
