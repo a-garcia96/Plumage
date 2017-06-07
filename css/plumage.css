@@ -1147,9 +1147,18 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem 0; }
 }
 
 /* ---------------------- jQUERY UI TABS ----------------------------------------- */ 
-    .plumage-tab.ui-widget.ui-widget-content {
+
+ul.plumage-tab {
         background: transparent;
-    } 
+}
+
+.ui-widget-header {
+        border: 0;
+        border-bottom: 1px  solid #666; }
+
+.plumage-tab.ui-widget.ui-widget-content {
+        background: transparent; }
+
 /* To avoind conflicts between more than one jQuery plug-ins, Plumage Framework needs that you include the class "plumage-tab" in your section tag that wraps everything.  */
 
     .ui-widget, .ui-widget-content {
@@ -1159,23 +1168,17 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem 0; }
         border: 1px solid #666;
         background: #009688;
     }
-    .ui-widget-header {
-        border: 0;
-        border-bottom: 1px  solid #666;
-        background: transparent;
-    }
-
-
-
-
 
 /* ---------------------jQUERY UI DIALOG ----------------------------------------- */
 
 /* Custom Styling  */
 
-[role="dialog"] {
-    background: yellow;
-}
+.ui-widget-header {
+        border: 0;
+        border-bottom: 1px  solid #666;
+        background: #009688;
+        color: #fff;
+    }
 
 div[id^="boxDialog"] p {
     padding: 1rem 1rem;
