@@ -1,3 +1,5 @@
+
+
 .nav-menu{
   display: block;
 }
@@ -15,6 +17,10 @@
   color: #333;
 }
 
+.nav-menu a:visited{
+  color: #333;
+}
+
 .fa-code{
   font-size: 30px;
   margin: 0 10px;
@@ -23,6 +29,8 @@
 .billboard{
   background-color: #558B2F;
   height: 60vh;
+  color: #333;
+  text-shadow: none;
   }
 
   .billboard h1{
@@ -71,5 +79,25 @@
 @media screen and (min-width: 600px){
   .profile-photo{
     left: 38%;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .profile-photo{
+    left: 40%;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .profile-photo{
+    left: 45%;
+  }
+
+  .nav-menu{
+    float: none;
+  }
+
+  .billboard h1{
+    font-size: 5rem;
   }
 }
