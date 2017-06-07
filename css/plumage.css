@@ -456,7 +456,7 @@ input[title="First Name"], input[type="email"], input[type="tel"] {
     min-width: 25%;
     max-width: 30%;
     margin-right: 3rem; }
-    
+
 input[title="Last Name"] {
     min-width: 35%;
     max-width: 45%;
