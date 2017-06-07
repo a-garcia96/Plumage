@@ -135,7 +135,7 @@
     &lt;/div&gt;
     </code></pre>
 
-    <p>Finally, you will include in the bottom of your HTML the piece of code that you want to display inside the dialog window. This content should keep hidden until the user clicks in the button. Now all that you need is create a <b>&lt;div&gt;</b> tag wrapping the content you have, and include on that a ID that will connect with the specific button that you created above. Like in the first situation, here you also can use up to 9 items per page:</p>
+    <p>Finally, you will include in the bottom of your HTML the piece of code that you want to display inside the dialog window. This content should keep hidden until the user clicks in the button. Now all that you need is create a <b>&lt;div&gt;</b> tag wrapping the content you have, and include on that a ID that will connect with the specific button that you created above. Like in the first situation, here you also can use up to nine items per page:</p>
     <ul><b><em>
         <li>#boxDialog1</li>
         <li>#boxDialog2</li>
@@ -153,16 +153,16 @@
     <pre><code>
     &lt;div id="boxDialog1" title="Title Number 1"&gt;
     &lt;img src="../images/01.jpg"/&gt;
-    &lt;p&gt;Lorem ipsum !&lt;/p&gt;
+    &lt;p&gt;Dialog box 1 !&lt;/p&gt;
     &lt;/div&gt;
 
     &lt;div id="boxDialog2" title="Title Number 2"&gt;
     &lt;img src="../images/02.jpg"/&gt;
-    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima dolorum, necessitatibus deserunt quia. Labore, optio reiciendis ipsa quia at neque libero enim ipsam odio voluptate, impedit minus dicta omnis! Distinctio!&lt;/p&gt;
+    &lt;p&gt;Your content here.&lt;/p&gt;
     &lt;/div&gt;
 
     &lt;div id="boxDialog3" title="Number 3"&gt;
-    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima dolorum, necessitatibus deserunt quia. Labore, optio reiciendis ipsa quia at neque libero enim ipsam odio voluptate, impedit minus dicta omnis! Distinctio!&lt;/p&gt;
+    &lt;p&gt;Welcome to Dialog box 3&lt;/p&gt;
     &lt;/div&gt;
     </code></pre>
     <br/>
@@ -188,16 +188,16 @@
 
     <div id="boxDialog1" title="Example 1">
     <img src="../images/01.jpg"/>
-    <p>Lorem ipsum !</p>
+    <p>Dialog box 1 !</p>
     </div>
 
     <div id="boxDialog2" title="Example 2">
     <img src="../images/02.jpg"/>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima dolorum, necessitatibus deserunt quia. Labore, optio reiciendis ipsa quia at neque libero enim ipsam odio voluptate, impedit minus dicta omnis! Distinctio!</p>
+    <p>Your content here.</p>
     </div>
 
     <div id="boxDialog3" title="Example No Image">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima dolorum, necessitatibus deserunt quia. Labore, optio reiciendis ipsa quia at neque libero enim ipsam odio voluptate, impedit minus dicta omnis! Distinctio!</p>
+    <p>Welcome to dialog box 3!</p>
     </div>
     </section>
 
@@ -210,7 +210,7 @@
                 <li><a href="#fragment-1">Tutorial</a></li>
                 <li><a href="#fragment-2">HTML</a></li>
             </ul>
-            <div id="fragment-1">So far this is our 3rd jQuery plug-in. And now we need be more careful in order to avoid conflicts between our classes. So take a look in our tags and classes in the next tab content, and make sure you won't forget the plumage-tab class. That's the one we created to make your code work even when you are stacking all these plug-ins we brught you up here.</div>
+            <div id="fragment-1">So far this is our 3rd jQuery plug-in. And now we need be more careful in order to avoid conflicts between our classes. So take a look in our tags and classes in the next tab content, and make sure you won't forget the plumage-tab class. That's the one we created to make your code work even when you are stacking all these plug-ins we brught you up here. <br/>You will have to include the class "plumage-tab" in your section tag and also in your UL tag.</div>
             <div id="fragment-2">
 
 <pre><code>
@@ -218,12 +218,12 @@
 &lt;section class="row plumage-tab" id="tabs"&gt;
 &lt;h2&gt;Tabs&lt;/h2&gt;
 &lt;div id="tabs"&gt;
-&lt;ul&gt;
+&lt;ul  class="plumage-tab"&gt;
 &lt;li&gt;&lt;a href="#fragment-1"&gt;Tutorial&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#fragment-2"&gt;HTML&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div id="fragment-1"&gt;Lorem ipsum.&lt;/div&gt;
-&lt;div id="fragment-2"&gt;laoreet dolore magna aliquam erat volutpat.&lt;/div&gt;
+&lt;div id="fragment-1"&gt;Hello World.&lt;/div&gt;
+&lt;div id="fragment-2"&gt;Formations&lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
 
