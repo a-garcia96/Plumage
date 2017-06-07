@@ -1068,6 +1068,7 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem 0; }
 
 .nav-menu { display: none; }
 
+
 /* ------------------------ TABLET GRID SYSTEM------------------------- */
 
 @media screen and (min-width: 600px) {
@@ -1092,6 +1093,7 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem 0; }
   .nav-menu a:hover { color: #333; }
 
   .side-nav{
+    display: block;
     position: fixed;
     font-size: 1.2rem;
   }
@@ -1107,7 +1109,7 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem 0; }
     color: #009688;
     border-bottom: 3px solid #009688;
   }
-
+}
 
 /* ---------------- BILLBOARD --------------------- */
 
@@ -1144,9 +1146,36 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem 0; }
   .billboard h1 { padding: 10% 0 4%; font-size: 10rem;}
 }
 
-/* ---------------------------------- jQUERY DIALOG ----------------------------------------- */
+/* ---------------------- jQUERY UI TABS ----------------------------------------- */ 
+    .plumage-tab.ui-widget.ui-widget-content {
+        background: transparent;
+    } 
+/* To avoind conflicts between more than one jQuery plug-ins, Plumage Framework needs that you include the class "plumage-tab" in your section tag that wraps everything.  */
+
+    .ui-widget, .ui-widget-content {
+        border: 0;
+    }
+    .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+        border: 1px solid #666;
+        background: #009688;
+    }
+    .ui-widget-header {
+        border: 0;
+        border-bottom: 1px  solid #666;
+        background: transparent;
+    }
+
+
+
+
+
+/* ---------------------jQUERY UI DIALOG ----------------------------------------- */
 
 /* Custom Styling  */
+
+[role="dialog"] {
+    background: yellow;
+}
 
 div[id^="boxDialog"] p {
     padding: 1rem 1rem;
@@ -1163,7 +1192,7 @@ div[id^="boxDialog"] img {
 [class^="clickDialog"] {
     cursor:pointer;
 }
-
+    
     #boxDialog1, #boxDialog2, #boxDialog3, #boxDialog4, #boxDialog5, #boxDialog6, #boxDialog7, #boxDialog8, #boxDialog9    , #boxDialog9 {
                 }
 
@@ -1176,6 +1205,7 @@ div[id^="boxDialog"] img {
             border-bottom-left-radius: 0px;
             border-top-right-radius: 0px;
             border-top-left-radius: 0px; }
+
         .ui-widget.ui-widget-content {
             border:none;
             background: #ccc; }
@@ -1189,3 +1219,4 @@ div[id^="boxDialog"] img {
             padding: 0; }
         button[type="button"] {
             box-shadow: none; }
+
