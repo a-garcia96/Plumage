@@ -4,6 +4,10 @@
 
 .nav-menu a { color: #fff; }
 
+.nav-menu a:visited{color: #fff}
+
+.nav-menu a:hover{color: #A5D6A7}
+
 .billboard { background: url(../images/hero.jpg) center left/cover; }
 
 footer { background-color: #009688; }

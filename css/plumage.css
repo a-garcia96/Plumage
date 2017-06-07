@@ -154,7 +154,7 @@
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
 
-/* ------------------------BASE STYLES------------------------- */
+/* ------------------------d STYLES------------------------- */
 
 html { font-size: 1rem; }
 
@@ -932,9 +932,12 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem 0; }
   margin: auto;
 }
 
+.hideSidebar{display: none;}
+
 @media screen and (min-width:600px) {
   .feature { height: 4.1rem;}
   .feature-box { min-height: 12rem; }
+  .hideSidebar{display: block;}
 }
 
 @media print {
@@ -1088,7 +1091,7 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem 0; }
     display: block;
     color: #333;
   }
-  .nav-menu a:visited { color: #fff; }
+  .nav-menu a:visited { color: #333; }
   .nav-menu a:hover { color: #333; }
 
   .side-nav{
@@ -1145,7 +1148,7 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem 0; }
   .billboard h1 { padding: 10% 0 4%; font-size: 10rem;}
 }
 
-/* ---------------------- jQUERY UI TABS ----------------------------------------- */ 
+/* ---------------------- jQUERY UI TABS ----------------------------------------- */
 
 ul.plumage-tab {
         background: transparent;
@@ -1194,7 +1197,7 @@ div[id^="boxDialog"] img {
 [class^="clickDialog"] {
     cursor:pointer;
 }
-    
+
     #boxDialog1, #boxDialog2, #boxDialog3, #boxDialog4, #boxDialog5, #boxDialog6, #boxDialog7, #boxDialog8, #boxDialog9    , #boxDialog9 {
                 }
 
@@ -1221,4 +1224,3 @@ div[id^="boxDialog"] img {
             padding: 0; }
         button[type="button"] {
             box-shadow: none; }
-
