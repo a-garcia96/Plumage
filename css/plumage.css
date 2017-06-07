@@ -462,9 +462,6 @@ input[title="Last Name"] {
     max-width: 45%;
 
     }
-
-
-
 }
 
 
@@ -727,7 +724,7 @@ input[type="number"]:focus {
 
 .input-number-wrapper:after {
     content: "\25B2";
-    pointer-events1: none;
+    pointer-events: none;
     z-index: 20;
     cursor: default;
     padding: 0;
@@ -740,7 +737,7 @@ input[type="number"]:focus {
 
 .input-number-wrapper:before {
     content: "\25BC";
-    pointer-events1: none;
+    pointer-events: none;
     z-index: 20;
     cursor: default;
     padding: 0;
