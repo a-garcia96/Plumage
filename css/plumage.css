@@ -460,11 +460,11 @@ input[title="First Name"], input[type="email"], input[type="tel"] {
 input[title="Last Name"] {
     min-width: 35%;
     max-width: 45%;
-    
+
     }
-    
-    
-    
+
+
+
 }
 
 
@@ -1190,7 +1190,7 @@ div[id^="boxDialog"] img {
 }
 
 [class^="clickDialog"] {
-    cursor:pointer;    
+    cursor:pointer;
 }
     
     #boxDialog1, #boxDialog2, #boxDialog3, #boxDialog4, #boxDialog5, #boxDialog6, #boxDialog7, #boxDialog8, #boxDialog9    , #boxDialog9 {

@@ -15,10 +15,14 @@
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
+<<<<<<< HEAD:pages/componets.html
   
   
   <script src="../js/jquery-ui.min.js" type="text/javascript"></script>    
   
+=======
+  <script src="../js/jquery-ui.min.js" type="text/javascript"></script>
+>>>>>>> 077ae55c0f8d0875f65c575d184126caf8687aa0:pages/components.html
   <link rel="stylesheet" href="../css/plumage.css">
   <link rel="stylesheet" href="../css/main.css">
 </head>
@@ -27,7 +31,7 @@
   <header class="navbar">
     <div class="container-lg">
       <img src="../images/logo.png" alt="logo" class="navbar-logo">
-      <h1 class="navbar-brand">Plumage</h1>
+      <h1 class="navbar-brand"><a href="../index.html">Plumage</a></h1>
       <!-- MENU BUTTON MUST GO HERE TO ENSURE FUNCTIONALITY -->
       <div class="navbar-menu-icon"></div>
       <!-- MOBILE NAV MUST GO BEFORE DESKTOP NAV IN ORDER TO FUNCTION PROPERLY -->
@@ -44,21 +48,26 @@
         <ul>
           <li><a href="getstarted.html">Get Started</a></li>
           <li><a href="css.html">CSS</a></li>
-          <li><a href="componets.html">Components</a></li>
+          <li><a href="components.html">Components</a></li>
           <li><a href="#">Download</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  
+
 <main class="container-lg">
-    <div class="row">    
+    <div class="row">
     <div class="col-md-8">
-    <h1>Components</h1>    
+    <h1>Components</h1>
     <p>Plumage.io has some cool features coded with jQuery, already styled to help developers and save some time in your coding.</p>
+<<<<<<< HEAD:pages/componets.html
     
     <section id="dialog">
+=======
+
+    <section id="download">
+>>>>>>> 077ae55c0f8d0875f65c575d184126caf8687aa0:pages/components.html
 
     <h2>Highlight Dialog Box</h2>
     <p>Our customized framework is providing 9 spots where you can store different contents to be displayed as a highlight window, which in jQuery is known as Dialog. All that you need to do is start creating as many button tags as you want, in order to show and hide the different contents you have.</p>
@@ -75,23 +84,23 @@
         <li>.clickDialog9</li>
     </em></b>
     </ul>
-   
+
     <p>Then you have to wrap your buttons with a div tag that may wrap everything or each button. By the end of this piece of code, your buttons should look like that:</p>
-    
+
     <pre><code>
     &lt;div class="col-lg-4 dialogButtons">
     &lt;<span class="keyTag">button</span> class="clickDialog1"&gt;
         Send
-    &lt;/<span class="keyTag">button</span>&gt; 
+    &lt;/<span class="keyTag">button</span>&gt;
     &lt;<span class="keyTag">button</span> class="clickDialog2"&gt;
         Send
-    &lt;/<span class="keyTag">button</span>&gt; 
+    &lt;/<span class="keyTag">button</span>&gt;
     &lt;<span class="keyTag">button</span> class="clickDialog3"&gt;
         Send
     &lt;/<span class="keyTag">button</span>&gt;
     &lt;/div&gt;
     </code></pre>
-    
+
     <p>Finally, you will include in the bottom of your HTML the piece of code that you want to display inside the dialog window. This content should keep hidden until the user clicks in the button. Now all that you need is create a <b>&lt;div&gt;</b> tag wrapping the content you have, and include on that a ID that will connect with the specific button that you created above. Like in the first situation, here you also can use up to 9 items per page:</p>
     <ul><b><em>
         <li>#boxDialog1</li>
@@ -106,18 +115,18 @@
         </em></b>
     </ul>
     <p>Then you should include an title attribute inside each div that you have, where you can write the title that you be displayed on the dialog box. A simple content for these div tags could look like that:</p>
-    
+
     <pre><code>
     &lt;div id="boxDialog1" title="Title Number 1"&gt;
     &lt;img src="../images/01.jpg"/&gt;
     &lt;p&gt;Lorem ipsum !&lt;/p&gt;
     &lt;/div&gt;
-    
+
     &lt;div id="boxDialog2" title="Title Number 2"&gt;
     &lt;img src="../images/02.jpg"/&gt;
     &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima dolorum, necessitatibus deserunt quia. Labore, optio reiciendis ipsa quia at neque libero enim ipsam odio voluptate, impedit minus dicta omnis! Distinctio!&lt;/p&gt;
     &lt;/div&gt;
-    
+
     &lt;div id="boxDialog3" title="Number 3"&gt;
     &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima dolorum, necessitatibus deserunt quia. Labore, optio reiciendis ipsa quia at neque libero enim ipsam odio voluptate, impedit minus dicta omnis! Distinctio!&lt;/p&gt;
     &lt;/div&gt;
@@ -125,38 +134,46 @@
     <br/>
     <h5>Check out how it works!</h5>
     <p>Now it's time for the show. Go ahead and test this awesome feature provided by Plumage and jQuery. Click on the buttons bellow to see how the dialog boxes look like.</p>
-    
-    
-    
+
+
+
     <div class="row">
-    
+
         <div class="col-lg-6 dialogButtons">
             <button class="clickDialog1" type="">
                 Result Box 1
-            </button> 
+            </button>
             <button class="clickDialog2" type="">
                 Result Box 2
-            </button> 
+            </button>
             <button class="clickDialog3" type="">
                 Result Box 2
-            </button>         
+            </button>
         </div>
     </div>
-    
+
     <div id="boxDialog1" title="Example 1">
     <img src="../images/01.jpg"/>
     <p>Lorem ipsum !</p>
     </div>
-    
+
     <div id="boxDialog2" title="Example 2">
     <img src="../images/02.jpg"/>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima dolorum, necessitatibus deserunt quia. Labore, optio reiciendis ipsa quia at neque libero enim ipsam odio voluptate, impedit minus dicta omnis! Distinctio!</p>
     </div>
-    
+
     <div id="boxDialog3" title="Example No Image">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima dolorum, necessitatibus deserunt quia. Labore, optio reiciendis ipsa quia at neque libero enim ipsam odio voluptate, impedit minus dicta omnis! Distinctio!</p>
+<<<<<<< HEAD:pages/componets.html
     </div>
     </section>     
+=======
+    </div>  </section>
+
+
+
+
+>>>>>>> 077ae55c0f8d0875f65c575d184126caf8687aa0:pages/components.html
 
     <section class="row" id="nav-bar">
     <h2>Navigation Bar</h2>
@@ -172,6 +189,7 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde enim, consequatur aperiam perferendis laborum accusantium commodi dolore, neque nobis vero placeat, quaerat quam recusandae ab pariatur doloribus! Provident neque, culpa.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde enim, consequatur aperiam perferendis laborum accusantium commodi dolore, neque nobis vero placeat, quaerat quam recusandae ab pariatur doloribus! Provident neque, culpa.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde enim, consequatur aperiam perferendis laborum accusantium commodi dolore, neque nobis vero placeat, quaerat quam recusandae ab pariatur doloribus! Provident neque, culpa.</p>
+<<<<<<< HEAD:pages/componets.html
     </section>
     
     <section class="row plumage-tab" id="tabs">
@@ -218,6 +236,10 @@
     </section>
     
 </div>
+=======
+
+</section>
+>>>>>>> 077ae55c0f8d0875f65c575d184126caf8687aa0:pages/components.html
       <div class="col-md-4">
         <nav class="side-nav">
           <ul>
@@ -231,13 +253,13 @@
       </div>
     </div>
 </main>
- 
+
   <footer>
     <div class="container-lg">
-      <h6>&copy; Plumage.io Framework | All Rights Reserved 2017</h6>
+      <h6>&copy; Plumagecss.com Framework | All Rights Reserved 2017</h6>
     </div>
   </footer>
-  
+
 <script type="text/javascript" src="../js/navbar.js"></script>
 
 <script type="text/javascript" src="../js/tabs.js"></script>
