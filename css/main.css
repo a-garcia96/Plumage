@@ -32,7 +32,7 @@ ul b em li {
 /* ---------end Grid.html--------- */
 
 /*  Documentation | Language Markup Styles
-===========================================*/ 
+===========================================*/
       pre > code {
           padding: 1rem;
           margin: 0;
@@ -66,3 +66,8 @@ ul b em li {
         .keyTag {
             color: darkgreen;
         }
+
+        /*button{
+          float: left;
+          display: inline-block;
+        }*/
