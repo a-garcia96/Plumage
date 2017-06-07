@@ -1148,11 +1148,13 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem 0; }
 
 /* ---------------------- jQUERY UI TABS ----------------------------------------- */ 
 
+ul.plumage-tab {
+        background: transparent;
+}
 
-.plumage-tab.ui-widget-header {
+.ui-widget-header {
         border: 0;
-        border-bottom: 1px  solid #666;
-        background: transparent; }
+        border-bottom: 1px  solid #666; }
 
 .plumage-tab.ui-widget.ui-widget-content {
         background: transparent; }
@@ -1167,10 +1169,6 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem 0; }
         background: #009688;
     }
 
-
-
-
-
 /* ---------------------jQUERY UI DIALOG ----------------------------------------- */
 
 /* Custom Styling  */
@@ -1179,6 +1177,7 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem 0; }
         border: 0;
         border-bottom: 1px  solid #666;
         background: #009688;
+        color: #fff;
     }
 
 div[id^="boxDialog"] p {
