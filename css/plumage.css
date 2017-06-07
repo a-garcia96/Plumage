@@ -1147,9 +1147,16 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem 0; }
 }
 
 /* ---------------------- jQUERY UI TABS ----------------------------------------- */ 
-    .plumage-tab.ui-widget.ui-widget-content {
-        background: transparent;
-    } 
+
+
+.plumage-tab.ui-widget-header {
+        border: 0;
+        border-bottom: 1px  solid #666;
+        background: transparent; }
+
+.plumage-tab.ui-widget.ui-widget-content {
+        background: transparent; }
+
 /* To avoind conflicts between more than one jQuery plug-ins, Plumage Framework needs that you include the class "plumage-tab" in your section tag that wraps everything.  */
 
     .ui-widget, .ui-widget-content {
@@ -1158,11 +1165,6 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem 0; }
     .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
         border: 1px solid #666;
         background: #009688;
-    }
-    .ui-widget-header {
-        border: 0;
-        border-bottom: 1px  solid #666;
-        background: transparent;
     }
 
 
@@ -1173,9 +1175,11 @@ pre, blockquote, dl, figure, table, p, ul, ol, form { padding: 1rem 0; }
 
 /* Custom Styling  */
 
-[role="dialog"] {
-    background: yellow;
-}
+.ui-widget-header {
+        border: 0;
+        border-bottom: 1px  solid #666;
+        background: #009688;
+    }
 
 div[id^="boxDialog"] p {
     padding: 1rem 1rem;
